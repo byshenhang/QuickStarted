@@ -118,7 +118,15 @@ namespace QuickStarted.Services
         {
             try
             {
-                // 尝试从程序集获取图标
+                // 尝试从应用程序目录加载icon.ico文件
+                var iconPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "icon.ico");
+                
+                if (File.Exists(iconPath))
+                {
+                    return new Icon(iconPath);
+                }
+                
+                // 备选方案：尝试从程序集获取图标
                 var assembly = Assembly.GetExecutingAssembly();
                 var iconStream = assembly.GetManifestResourceStream("QuickStarted.icon.ico");
                 
