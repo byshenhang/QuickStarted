@@ -1,0 +1,281 @@
+{
+  "EditTime": "2024-01-15 10:30:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "基础操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存场景",
+          "desc": "保存当前3ds Max场景文件"
+        },
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建场景",
+          "desc": "创建新的3ds Max场景"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开场景",
+          "desc": "打开已有的3ds Max场景文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Z",
+          "name": "撤销",
+          "desc": "撤销上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Y",
+          "name": "重做",
+          "desc": "重做上一步撤销的操作"
+        },
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择场景中的所有对象"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除",
+          "desc": "删除选中的对象"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "克隆",
+          "desc": "克隆选中的对象"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "变换工具",
+      "Data": [
+        {
+          "shortcutkey": "Q",
+          "name": "选择工具",
+          "desc": "激活选择工具"
+        },
+        {
+          "shortcutkey": "W",
+          "name": "移动工具",
+          "desc": "激活移动变换工具"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "旋转工具",
+          "desc": "激活旋转变换工具"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "缩放工具",
+          "desc": "激活缩放变换工具"
+        },
+        {
+          "shortcutkey": "X",
+          "name": "约束到X轴",
+          "desc": "将变换约束到X轴"
+        },
+        {
+          "shortcutkey": "Y",
+          "name": "约束到Y轴",
+          "desc": "将变换约束到Y轴"
+        },
+        {
+          "shortcutkey": "Z",
+          "name": "约束到Z轴",
+          "desc": "将变换约束到Z轴"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "变换类型切换",
+          "desc": "在移动、旋转、缩放工具间切换"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "视口控制",
+      "Data": [
+        {
+          "shortcutkey": "Alt+W",
+          "name": "最大化视口",
+          "desc": "最大化当前活动视口"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "显示/隐藏网格",
+          "desc": "切换视口中网格的显示状态"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "线框模式",
+          "desc": "切换到线框显示模式"
+        },
+        {
+          "shortcutkey": "F4",
+          "name": "边面模式",
+          "desc": "切换到边面显示模式"
+        },
+        {
+          "shortcutkey": "F2",
+          "name": "着色模式",
+          "desc": "切换到着色显示模式"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "旋转视图",
+          "desc": "激活视图旋转模式"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "平移视图",
+          "desc": "激活视图平移模式"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Z",
+          "name": "缩放视图",
+          "desc": "激活视图缩放模式"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "建模工具",
+      "Data": [
+        {
+          "shortcutkey": "1",
+          "name": "顶点模式",
+          "desc": "切换到顶点编辑模式"
+        },
+        {
+          "shortcutkey": "2",
+          "name": "边模式",
+          "desc": "切换到边编辑模式"
+        },
+        {
+          "shortcutkey": "3",
+          "name": "面模式",
+          "desc": "切换到面编辑模式"
+        },
+        {
+          "shortcutkey": "4",
+          "name": "多边形模式",
+          "desc": "切换到多边形编辑模式"
+        },
+        {
+          "shortcutkey": "5",
+          "name": "元素模式",
+          "desc": "切换到元素编辑模式"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "倒角",
+          "desc": "对选中的边或面执行倒角操作"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "挤出",
+          "desc": "对选中的面执行挤出操作"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "插入",
+          "desc": "在选中的面内插入新面"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "渲染相关",
+      "Data": [
+        {
+          "shortcutkey": "F9",
+          "name": "快速渲染",
+          "desc": "执行快速渲染"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "渲染设置",
+          "desc": "打开渲染设置对话框"
+        },
+        {
+          "shortcutkey": "Shift+Q",
+          "name": "快速渲染选中",
+          "desc": "只渲染选中的对象"
+        },
+        {
+          "shortcutkey": "M",
+          "name": "材质编辑器",
+          "desc": "打开材质编辑器"
+        },
+        {
+          "shortcutkey": "8",
+          "name": "环境和效果",
+          "desc": "打开环境和效果对话框"
+        },
+        {
+          "shortcutkey": "9",
+          "name": "高级照明",
+          "desc": "打开高级照明设置"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "创建灯光",
+          "desc": "创建新的灯光对象"
+        },
+        {
+          "shortcutkey": "C",
+          "name": "摄像机视图",
+          "desc": "切换到摄像机视图"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "动画工具",
+      "Data": [
+        {
+          "shortcutkey": "A",
+          "name": "自动关键帧",
+          "desc": "开启/关闭自动关键帧模式"
+        },
+        {
+          "shortcutkey": "K",
+          "name": "设置关键帧",
+          "desc": "在当前时间设置关键帧"
+        },
+        {
+          "shortcutkey": "Space",
+          "name": "播放/暂停",
+          "desc": "播放或暂停动画"
+        },
+        {
+          "shortcutkey": "Home",
+          "name": "跳到开始",
+          "desc": "跳转到动画开始帧"
+        },
+        {
+          "shortcutkey": "End",
+          "name": "跳到结束",
+          "desc": "跳转到动画结束帧"
+        },
+        {
+          "shortcutkey": "<",
+          "name": "上一关键帧",
+          "desc": "跳转到上一个关键帧"
+        },
+        {
+          "shortcutkey": ">",
+          "name": "下一关键帧",
+          "desc": "跳转到下一个关键帧"
+        },
+        {
+          "shortcutkey": "N",
+          "name": "自动切线",
+          "desc": "设置关键帧为自动切线模式"
+        }
+      ]
+    }
+  ]
+}

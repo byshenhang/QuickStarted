@@ -1,0 +1,281 @@
+{
+  "EditTime": "2024-01-15 10:30:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建文件",
+          "desc": "创建新的文件"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开已有文件"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存文件",
+          "desc": "保存当前文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+S",
+          "name": "另存为",
+          "desc": "将文件另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭文件",
+          "desc": "关闭当前文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+T",
+          "name": "重新打开关闭的文件",
+          "desc": "重新打开最近关闭的文件"
+        },
+        {
+          "shortcutkey": "Ctrl+K Ctrl+O",
+          "name": "打开文件夹",
+          "desc": "打开文件夹作为工作区"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+N",
+          "name": "新建窗口",
+          "desc": "打开新的VS Code窗口"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "编辑操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Z",
+          "name": "撤销",
+          "desc": "撤销上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Y",
+          "name": "重做",
+          "desc": "重做上一步撤销的操作"
+        },
+        {
+          "shortcutkey": "Ctrl+X",
+          "name": "剪切",
+          "desc": "剪切选中的文本"
+        },
+        {
+          "shortcutkey": "Ctrl+C",
+          "name": "复制",
+          "desc": "复制选中的文本"
+        },
+        {
+          "shortcutkey": "Ctrl+V",
+          "name": "粘贴",
+          "desc": "粘贴剪贴板内容"
+        },
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择所有文本"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "选择下一个匹配项",
+          "desc": "选择下一个与当前选中文本相同的内容"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+L",
+          "name": "选择所有匹配项",
+          "desc": "选择所有与当前选中文本相同的内容"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "导航操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "快速打开文件",
+          "desc": "快速搜索并打开文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+P",
+          "name": "命令面板",
+          "desc": "打开命令面板"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "跳转到行",
+          "desc": "跳转到指定行号"
+        },
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "查找",
+          "desc": "在当前文件中查找"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "替换",
+          "desc": "在当前文件中查找并替换"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "全局查找",
+          "desc": "在整个工作区中查找"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "查找下一个",
+          "desc": "查找下一个匹配项"
+        },
+        {
+          "shortcutkey": "Shift+F3",
+          "name": "查找上一个",
+          "desc": "查找上一个匹配项"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "代码编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+/",
+          "name": "切换行注释",
+          "desc": "添加或移除行注释"
+        },
+        {
+          "shortcutkey": "Shift+Alt+A",
+          "name": "切换块注释",
+          "desc": "添加或移除块注释"
+        },
+        {
+          "shortcutkey": "Alt+Up/Down",
+          "name": "移动行",
+          "desc": "向上或向下移动当前行"
+        },
+        {
+          "shortcutkey": "Shift+Alt+Up/Down",
+          "name": "复制行",
+          "desc": "向上或向下复制当前行"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+K",
+          "name": "删除行",
+          "desc": "删除当前行"
+        },
+        {
+          "shortcutkey": "Ctrl+Enter",
+          "name": "在下方插入行",
+          "desc": "在当前行下方插入新行"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Enter",
+          "name": "在上方插入行",
+          "desc": "在当前行上方插入新行"
+        },
+        {
+          "shortcutkey": "Ctrl+]",
+          "name": "增加缩进",
+          "desc": "增加选中行的缩进"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "调试运行",
+      "Data": [
+        {
+          "shortcutkey": "F5",
+          "name": "开始调试",
+          "desc": "开始调试当前程序"
+        },
+        {
+          "shortcutkey": "Ctrl+F5",
+          "name": "运行不调试",
+          "desc": "运行程序但不进入调试模式"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "切换断点",
+          "desc": "在当前行添加或移除断点"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "单步跳过",
+          "desc": "执行下一行代码（不进入函数）"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "单步进入",
+          "desc": "执行下一行代码（进入函数）"
+        },
+        {
+          "shortcutkey": "Shift+F11",
+          "name": "单步跳出",
+          "desc": "跳出当前函数"
+        },
+        {
+          "shortcutkey": "Shift+F5",
+          "name": "停止调试",
+          "desc": "停止当前调试会话"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F5",
+          "name": "重启调试",
+          "desc": "重新启动调试会话"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "界面控制",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "切换侧边栏",
+          "desc": "显示或隐藏侧边栏"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+E",
+          "name": "资源管理器",
+          "desc": "打开文件资源管理器"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "源代码管理",
+          "desc": "打开Git源代码管理面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+D",
+          "name": "调试面板",
+          "desc": "打开调试面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+X",
+          "name": "扩展面板",
+          "desc": "打开扩展管理面板"
+        },
+        {
+          "shortcutkey": "Ctrl+`",
+          "name": "切换终端",
+          "desc": "显示或隐藏集成终端"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+`",
+          "name": "新建终端",
+          "desc": "创建新的终端实例"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "切换全屏",
+          "desc": "进入或退出全屏模式"
+        }
+      ]
+    }
+  ]
+}

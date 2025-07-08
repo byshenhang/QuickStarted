@@ -1,0 +1,41 @@
+{
+    "EditTime": "2024-01-15 10:30:00.000000",
+    "MapData" : [
+       {
+         "3dMax" : [
+            "3dsmax",
+            "3dsmaxcmd",
+            "3dsmax.exe",
+            "max.exe",
+            "maxstart"
+         ]
+       },
+       {
+         "Maya" : [
+            "maya",
+            "maya.exe",
+            "mayabatch"
+         ]
+       },
+       {
+         "Blender" : [
+            "blender",
+            "blender.exe"
+         ]
+       },
+       {
+         "Photoshop" : [
+            "photoshop",
+            "Photoshop.exe"
+         ]
+       },
+       {
+         "VSCode" : [
+            "code",
+            "code.exe",
+            "vscode",
+            "Code.exe"
+         ]
+       }
+    ]
+}

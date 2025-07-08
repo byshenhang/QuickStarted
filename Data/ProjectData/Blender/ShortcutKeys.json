@@ -1,0 +1,281 @@
+{
+  "EditTime": "2024-01-15 10:30:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "基础操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存文件",
+          "desc": "保存当前Blender项目文件"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开已有的Blender项目文件"
+        },
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建文件",
+          "desc": "创建新的Blender项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Z",
+          "name": "撤销",
+          "desc": "撤销上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Z",
+          "name": "重做",
+          "desc": "重做上一步撤销的操作"
+        },
+        {
+          "shortcutkey": "A",
+          "name": "全选/取消全选",
+          "desc": "选择或取消选择所有对象"
+        },
+        {
+          "shortcutkey": "X",
+          "name": "删除",
+          "desc": "删除选中的对象"
+        },
+        {
+          "shortcutkey": "Shift+D",
+          "name": "复制",
+          "desc": "复制选中的对象"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "变换工具",
+      "Data": [
+        {
+          "shortcutkey": "G",
+          "name": "移动",
+          "desc": "激活移动工具"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "旋转",
+          "desc": "激活旋转工具"
+        },
+        {
+          "shortcutkey": "S",
+          "name": "缩放",
+          "desc": "激活缩放工具"
+        },
+        {
+          "shortcutkey": "G+X",
+          "name": "沿X轴移动",
+          "desc": "将移动约束到X轴"
+        },
+        {
+          "shortcutkey": "G+Y",
+          "name": "沿Y轴移动",
+          "desc": "将移动约束到Y轴"
+        },
+        {
+          "shortcutkey": "G+Z",
+          "name": "沿Z轴移动",
+          "desc": "将移动约束到Z轴"
+        },
+        {
+          "shortcutkey": "Tab",
+          "name": "编辑模式切换",
+          "desc": "在对象模式和编辑模式间切换"
+        },
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "应用变换",
+          "desc": "应用对象的变换属性"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "视图控制",
+      "Data": [
+        {
+          "shortcutkey": "鼠标中键拖拽",
+          "name": "旋转视图",
+          "desc": "旋转3D视图"
+        },
+        {
+          "shortcutkey": "Shift+鼠标中键",
+          "name": "平移视图",
+          "desc": "平移3D视图"
+        },
+        {
+          "shortcutkey": "滚轮",
+          "name": "缩放视图",
+          "desc": "缩放3D视图"
+        },
+        {
+          "shortcutkey": "Numpad 1",
+          "name": "前视图",
+          "desc": "切换到前视图"
+        },
+        {
+          "shortcutkey": "Numpad 3",
+          "name": "右视图",
+          "desc": "切换到右视图"
+        },
+        {
+          "shortcutkey": "Numpad 7",
+          "name": "顶视图",
+          "desc": "切换到顶视图"
+        },
+        {
+          "shortcutkey": "Numpad 0",
+          "name": "摄像机视图",
+          "desc": "切换到摄像机视图"
+        },
+        {
+          "shortcutkey": "Numpad .",
+          "name": "聚焦选中",
+          "desc": "将视图聚焦到选中对象"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "建模工具",
+      "Data": [
+        {
+          "shortcutkey": "1",
+          "name": "顶点选择",
+          "desc": "切换到顶点选择模式"
+        },
+        {
+          "shortcutkey": "2",
+          "name": "边选择",
+          "desc": "切换到边选择模式"
+        },
+        {
+          "shortcutkey": "3",
+          "name": "面选择",
+          "desc": "切换到面选择模式"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "挤出",
+          "desc": "挤出选中的面或边"
+        },
+        {
+          "shortcutkey": "I",
+          "name": "内插面",
+          "desc": "在选中面内创建内插面"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "环切",
+          "desc": "添加环形边循环"
+        },
+        {
+          "shortcutkey": "K",
+          "name": "刀切",
+          "desc": "激活刀切工具"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "填充",
+          "desc": "填充选中的顶点或边"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "渲染相关",
+      "Data": [
+        {
+          "shortcutkey": "F12",
+          "name": "渲染图像",
+          "desc": "渲染当前场景"
+        },
+        {
+          "shortcutkey": "Ctrl+F12",
+          "name": "渲染动画",
+          "desc": "渲染整个动画序列"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "显示渲染结果",
+          "desc": "显示最后的渲染结果"
+        },
+        {
+          "shortcutkey": "Shift+Z",
+          "name": "材质预览",
+          "desc": "切换到材质预览模式"
+        },
+        {
+          "shortcutkey": "Z",
+          "name": "着色模式",
+          "desc": "切换着色模式"
+        },
+        {
+          "shortcutkey": "Shift+A",
+          "name": "添加对象",
+          "desc": "打开添加对象菜单"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "添加灯光",
+          "desc": "快速添加灯光"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+U",
+          "name": "用户偏好设置",
+          "desc": "打开用户偏好设置"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "动画工具",
+      "Data": [
+        {
+          "shortcutkey": "I",
+          "name": "插入关键帧",
+          "desc": "为选中对象插入关键帧"
+        },
+        {
+          "shortcutkey": "Space",
+          "name": "播放/暂停",
+          "desc": "播放或暂停动画"
+        },
+        {
+          "shortcutkey": "Left Arrow",
+          "name": "上一帧",
+          "desc": "跳转到上一帧"
+        },
+        {
+          "shortcutkey": "Right Arrow",
+          "name": "下一帧",
+          "desc": "跳转到下一帧"
+        },
+        {
+          "shortcutkey": "Up Arrow",
+          "name": "跳转到结束",
+          "desc": "跳转到动画结束帧"
+        },
+        {
+          "shortcutkey": "Down Arrow",
+          "name": "跳转到开始",
+          "desc": "跳转到动画开始帧"
+        },
+        {
+          "shortcutkey": "Alt+A",
+          "name": "播放动画",
+          "desc": "播放动画预览"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制关键帧",
+          "desc": "复制选中的关键帧"
+        }
+      ]
+    }
+  ]
+}
