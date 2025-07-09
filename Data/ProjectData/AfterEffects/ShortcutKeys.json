@@ -1,0 +1,85 @@
+{
+  "EditTime": "2024-12-19 15:52:00.000000",
+  "ShortcutKeys": {
+    "合成操作": {
+      "Ctrl+N": "新建合成",
+      "Ctrl+K": "合成设置",
+      "Ctrl+M": "添加到渲染队列",
+      "Ctrl+Shift+/": "添加到Adobe Media Encoder",
+      "Ctrl+D": "复制图层",
+      "Ctrl+Shift+D": "分割图层",
+      "Ctrl+Shift+C": "预合成",
+      "Ctrl+Y": "新建纯色图层"
+    },
+    "时间轴控制": {
+      "Space": "播放/暂停",
+      "J": "向前播放",
+      "K": "暂停",
+      "L": "向后播放",
+      "Page Down": "下一帧",
+      "Page Up": "上一帧",
+      "Home": "跳到开始",
+      "End": "跳到结束"
+    },
+    "关键帧动画": {
+      "Alt+Shift+P": "位置关键帧",
+      "Alt+Shift+R": "旋转关键帧",
+      "Alt+Shift+S": "缩放关键帧",
+      "Alt+Shift+T": "不透明度关键帧",
+      "F9": "缓动关键帧",
+      "Ctrl+Alt+H": "自动贝塞尔",
+      "U": "显示已设关键帧属性",
+      "UU": "显示已修改属性"
+    },
+    "图层管理": {
+      "Ctrl+Shift+Y": "新建调整图层",
+      "Ctrl+Alt+Y": "新建摄像机",
+      "Ctrl+Alt+Shift+Y": "新建灯光",
+      "Ctrl+Shift+T": "新建文本图层",
+      "Ctrl+[": "图层后移",
+      "Ctrl+]": "图层前移",
+      "Ctrl+Shift+[": "图层置底",
+      "Ctrl+Shift+]": "图层置顶"
+    },
+    "效果和预设": {
+      "Ctrl+Shift+E": "效果控制面板",
+      "Ctrl+Shift+F": "效果和预设面板",
+      "Ctrl+Alt+Shift+E": "移除所有效果",
+      "Ctrl+Shift+T": "扭曲稳定器",
+      "Ctrl+Alt+F": "重复上次效果",
+      "Ctrl+Shift+Alt+F": "重复上次效果(新实例)",
+      "Alt+Enter": "应用效果",
+      "Ctrl+E": "编辑原始素材"
+    },
+    "3D和摄像机": {
+      "Ctrl+Alt+Shift+C": "3D图层切换",
+      "C": "摄像机工具",
+      "Y": "锚点工具",
+      "W": "旋转工具",
+      "E": "缩放工具",
+      "R": "矩形工具",
+      "G": "钢笔工具",
+      "Ctrl+Alt+R": "重置3D视图"
+    },
+    "渲染和预览": {
+      "Ctrl+0": "RAM预览",
+      "Ctrl+Alt+0": "音频预览",
+      "Ctrl+Shift+0": "区域预览",
+      "Ctrl+Enter": "标准预览",
+      "Ctrl+Shift+Enter": "快速预览",
+      "Ctrl+Alt+Enter": "线框预览",
+      "Ctrl+M": "添加到渲染队列",
+      "Ctrl+Alt+M": "渲染设置"
+    },
+    "工作区和面板": {
+      "Ctrl+F1": "项目面板",
+      "Ctrl+F2": "合成面板",
+      "Ctrl+F3": "时间轴面板",
+      "Ctrl+F4": "效果控制面板",
+      "Ctrl+F5": "音频面板",
+      "Ctrl+F6": "信息面板",
+      "Ctrl+F11": "字符面板",
+      "Ctrl+F12": "段落面板"
+    }
+  }
+}

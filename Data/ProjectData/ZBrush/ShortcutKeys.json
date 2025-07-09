@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T11:30:00",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "雕刻工具",
+      "Data": [
+        {
+          "shortcutkey": "B",
+          "name": "标准笔刷",
+          "desc": "切换到标准雕刻笔刷"
+        },
+        {
+          "shortcutkey": "Alt+B",
+          "name": "平滑笔刷",
+          "desc": "切换到平滑笔刷"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "抓取笔刷",
+          "desc": "切换到抓取移动笔刷"
+        },
+        {
+          "shortcutkey": "M",
+          "name": "遮罩笔刷",
+          "desc": "切换到遮罩笔刷"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "反转遮罩",
+          "desc": "反转当前遮罩选择"
+        },
+        {
+          "shortcutkey": "Ctrl+Drag",
+          "name": "遮罩拖拽",
+          "desc": "按住Ctrl拖拽创建遮罩"
+        },
+        {
+          "shortcutkey": "Alt+Drag",
+          "name": "平滑拖拽",
+          "desc": "按住Alt拖拽进行平滑操作"
+        },
+        {
+          "shortcutkey": "[",
+          "name": "减小笔刷",
+          "desc": "减小笔刷大小"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "视图控制",
+      "Data": [
+        {
+          "shortcutkey": "Drag",
+          "name": "旋转视图",
+          "desc": "拖拽旋转3D视图"
+        },
+        {
+          "shortcutkey": "Alt+Drag",
+          "name": "平移视图",
+          "desc": "按住Alt拖拽平移视图"
+        },
+        {
+          "shortcutkey": "Ctrl+0",
+          "name": "适合视图",
+          "desc": "将模型适合到视图中"
+        },
+        {
+          "shortcutkey": "Shift+Ctrl+0",
+          "name": "重置视图",
+          "desc": "重置视图到默认角度"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "聚焦模式",
+          "desc": "切换聚焦模式显示"
+        },
+        {
+          "shortcutkey": "Shift+F",
+          "name": "透视模式",
+          "desc": "切换透视/正交投影"
+        },
+        {
+          "shortcutkey": "T",
+          "name": "编辑模式",
+          "desc": "切换编辑/移动模式"
+        },
+        {
+          "shortcutkey": "Q",
+          "name": "绘制模式",
+          "desc": "切换绘制模式"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "几何操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "细分",
+          "desc": "对当前模型进行细分"
+        },
+        {
+          "shortcutkey": "Shift+D",
+          "name": "降低细分",
+          "desc": "降低模型细分级别"
+        },
+        {
+          "shortcutkey": "D",
+          "name": "分割",
+          "desc": "分割当前选择区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+D",
+          "name": "删除细分",
+          "desc": "删除当前细分级别"
+        },
+        {
+          "shortcutkey": "X",
+          "name": "对称模式",
+          "desc": "切换X轴对称雕刻"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "径向对称",
+          "desc": "切换径向对称模式"
+        },
+        {
+          "shortcutkey": "Shift+X",
+          "name": "镜像",
+          "desc": "镜像当前几何体"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "焊接点",
+          "desc": "焊接选中的顶点"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "选择工具",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+Drag",
+          "name": "选择区域",
+          "desc": "拖拽选择几何区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Click",
+          "name": "选择面",
+          "desc": "点击选择单个面"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+Shift+Drag",
+          "name": "取消选择",
+          "desc": "拖拽取消选择区域"
+        },
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择所有几何体"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+A",
+          "name": "取消全选",
+          "desc": "取消所有选择"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+I",
+          "name": "反选",
+          "desc": "反转当前选择"
+        },
+        {
+          "shortcutkey": "H",
+          "name": "隐藏选择",
+          "desc": "隐藏选中的几何体"
+        },
+        {
+          "shortcutkey": "Shift+H",
+          "name": "显示全部",
+          "desc": "显示所有隐藏的几何体"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "材质纹理",
+      "Data": [
+        {
+          "shortcutkey": "C",
+          "name": "颜色选择",
+          "desc": "打开颜色选择器"
+        },
+        {
+          "shortcutkey": "Shift+C",
+          "name": "材质模式",
+          "desc": "切换材质显示模式"
+        },
+        {
+          "shortcutkey": "V",
+          "name": "顶点颜色",
+          "desc": "切换顶点颜色模式"
+        },
+        {
+          "shortcutkey": "Shift+V",
+          "name": "纹理模式",
+          "desc": "切换纹理显示模式"
+        },
+        {
+          "shortcutkey": "Alt+C",
+          "name": "拾色器",
+          "desc": "激活拾色器工具"
+        },
+        {
+          "shortcutkey": "U",
+          "name": "UV映射",
+          "desc": "打开UV映射工具"
+        },
+        {
+          "shortcutkey": "Shift+U",
+          "name": "展开UV",
+          "desc": "自动展开UV坐标"
+        },
+        {
+          "shortcutkey": "P",
+          "name": "投影模式",
+          "desc": "切换纹理投影模式"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "变换工具",
+      "Data": [
+        {
+          "shortcutkey": "W",
+          "name": "移动工具",
+          "desc": "激活移动变换工具"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "旋转工具",
+          "desc": "激活旋转变换工具"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "缩放工具",
+          "desc": "激活缩放变换工具"
+        },
+        {
+          "shortcutkey": "Shift+W",
+          "name": "自由变换",
+          "desc": "激活自由变换模式"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "转置",
+          "desc": "打开转置工具"
+        },
+        {
+          "shortcutkey": "Y",
+          "name": "轴心点",
+          "desc": "设置变换轴心点"
+        },
+        {
+          "shortcutkey": "Shift+Y",
+          "name": "重置轴心",
+          "desc": "重置轴心点到中心"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+T",
+          "name": "复制变换",
+          "desc": "复制上次变换操作"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建项目",
+          "desc": "创建新的ZBrush项目"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开ZBrush项目文件"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存项目",
+          "desc": "保存当前项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+S",
+          "name": "另存为",
+          "desc": "项目另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "导入模型",
+          "desc": "导入3D模型文件"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "导出模型",
+          "desc": "导出当前模型"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+E",
+          "name": "导出纹理",
+          "desc": "导出纹理贴图"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+S",
+          "name": "快速保存",
+          "desc": "快速保存当前工作"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "Name": "界面控制",
+      "Data": [
+        {
+          "shortcutkey": "Tab",
+          "name": "切换界面",
+          "desc": "切换完整/简化界面"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "隐藏界面",
+          "desc": "隐藏所有界面元素"
+        },
+        {
+          "shortcutkey": "Space",
+          "name": "快速菜单",
+          "desc": "打开快速访问菜单"
+        },
+        {
+          "shortcutkey": "Ctrl+Z",
+          "name": "撤销",
+          "desc": "撤销上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Z",
+          "name": "重做",
+          "desc": "重做上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "历史记录",
+          "desc": "打开操作历史记录"
+        },
+        {
+          "shortcutkey": "F1",
+          "name": "帮助",
+          "desc": "打开ZBrush帮助文档"
+        },
+        {
+          "shortcutkey": "Esc",
+          "name": "取消操作",
+          "desc": "取消当前操作或退出模式"
+        }
+      ]
+    }
+  ]
+}

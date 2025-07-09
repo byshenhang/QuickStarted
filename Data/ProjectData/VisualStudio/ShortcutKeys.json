@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-01-15 10:30:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "项目解决方案",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+N",
+          "name": "新建项目",
+          "desc": "创建新的Visual Studio项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+O",
+          "name": "打开项目/解决方案",
+          "desc": "打开已有项目或解决方案"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+A",
+          "name": "添加新项",
+          "desc": "向项目添加新项目"
+        },
+        {
+          "shortcutkey": "Shift+Alt+A",
+          "name": "添加现有项",
+          "desc": "向项目添加现有文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Alt+A",
+          "name": "添加新项目",
+          "desc": "向解决方案添加新项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+L",
+          "name": "解决方案资源管理器",
+          "desc": "打开或聚焦解决方案资源管理器"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+A",
+          "name": "类视图",
+          "desc": "打开类视图窗口"
+        },
+        {
+          "shortcutkey": "Ctrl+\\, Ctrl+S",
+          "name": "同步解决方案资源管理器",
+          "desc": "在解决方案资源管理器中定位当前文件"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "高级编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制行",
+          "desc": "复制当前行到下一行"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "删除行",
+          "desc": "删除当前行"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+L",
+          "name": "删除到行尾",
+          "desc": "删除从光标到行尾的内容"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "转换为小写",
+          "desc": "将选中文本转换为小写"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+U",
+          "name": "转换为大写",
+          "desc": "将选中文本转换为大写"
+        },
+        {
+          "shortcutkey": "Alt+Up/Down",
+          "name": "移动行",
+          "desc": "向上或向下移动当前行"
+        },
+        {
+          "shortcutkey": "Ctrl+M, Ctrl+M",
+          "name": "切换大纲显示",
+          "desc": "展开或折叠当前区域"
+        },
+        {
+          "shortcutkey": "Ctrl+M, Ctrl+O",
+          "name": "折叠到定义",
+          "desc": "折叠所有方法和类定义"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "智能导航",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "转到所有",
+          "desc": "快速搜索文件、类型、成员等"
+        },
+        {
+          "shortcutkey": "Ctrl+,",
+          "name": "转到文件",
+          "desc": "快速打开文件"
+        },
+        {
+          "shortcutkey": "Ctrl+1, Ctrl+M",
+          "name": "转到成员",
+          "desc": "快速跳转到类成员"
+        },
+        {
+          "shortcutkey": "Ctrl+1, Ctrl+T",
+          "name": "转到类型",
+          "desc": "快速跳转到类型定义"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "转到定义",
+          "desc": "跳转到符号定义"
+        },
+        {
+          "shortcutkey": "Ctrl+F12",
+          "name": "转到实现",
+          "desc": "跳转到接口或虚方法的实现"
+        },
+        {
+          "shortcutkey": "Shift+F12",
+          "name": "查找所有引用",
+          "desc": "查找符号的所有引用位置"
+        },
+        {
+          "shortcutkey": "Alt+F12",
+          "name": "查看定义",
+          "desc": "在弹出窗口中查看定义"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "代码编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+K, Ctrl+C",
+          "name": "注释选择",
+          "desc": "注释选中的代码行"
+        },
+        {
+          "shortcutkey": "Ctrl+K, Ctrl+U",
+          "name": "取消注释",
+          "desc": "取消注释选中的代码行"
+        },
+        {
+          "shortcutkey": "Ctrl+K, Ctrl+D",
+          "name": "格式化文档",
+          "desc": "格式化整个文档"
+        },
+        {
+          "shortcutkey": "Ctrl+K, Ctrl+F",
+          "name": "格式化选择",
+          "desc": "格式化选中的代码"
+        },
+        {
+          "shortcutkey": "Tab",
+          "name": "增加缩进",
+          "desc": "增加选中行的缩进"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "减少缩进",
+          "desc": "减少选中行的缩进"
+        },
+        {
+          "shortcutkey": "Ctrl+]",
+          "name": "转到匹配的括号",
+          "desc": "跳转到匹配的括号"
+        },
+        {
+          "shortcutkey": "Ctrl+Space",
+          "name": "智能感知",
+          "desc": "触发智能感知提示"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "调试运行",
+      "Data": [
+        {
+          "shortcutkey": "F5",
+          "name": "开始调试",
+          "desc": "开始调试当前项目"
+        },
+        {
+          "shortcutkey": "Ctrl+F5",
+          "name": "开始执行(不调试)",
+          "desc": "运行项目但不进入调试模式"
+        },
+        {
+          "shortcutkey": "Shift+F5",
+          "name": "停止调试",
+          "desc": "停止当前调试会话"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "切换断点",
+          "desc": "在当前行设置或移除断点"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "逐过程",
+          "desc": "执行下一行代码(不进入函数)"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "逐语句",
+          "desc": "执行下一行代码(进入函数)"
+        },
+        {
+          "shortcutkey": "Shift+F11",
+          "name": "跳出",
+          "desc": "跳出当前函数"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F9",
+          "name": "删除所有断点",
+          "desc": "删除项目中的所有断点"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "专业工具窗口",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Alt+O",
+          "name": "输出窗口",
+          "desc": "打开输出窗口"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+E",
+          "name": "错误列表",
+          "desc": "打开错误列表窗口"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+X",
+          "name": "工具箱",
+          "desc": "打开工具箱窗口"
+        },
+        {
+          "shortcutkey": "F4",
+          "name": "属性窗口",
+          "desc": "打开属性窗口"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+S",
+          "name": "服务器资源管理器",
+          "desc": "打开服务器资源管理器"
+        },
+        {
+          "shortcutkey": "Ctrl+\\, Ctrl+T",
+          "name": "任务列表",
+          "desc": "打开任务列表窗口"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+P",
+          "name": "包管理器控制台",
+          "desc": "打开NuGet包管理器控制台"
+        },
+        {
+          "shortcutkey": "Ctrl+\\, Ctrl+E",
+          "name": "团队资源管理器",
+          "desc": "打开团队资源管理器"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "项目管理",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+B",
+          "name": "生成解决方案",
+          "desc": "编译整个解决方案"
+        },
+        {
+          "shortcutkey": "F6",
+          "name": "生成项目",
+          "desc": "编译当前项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+F7",
+          "name": "重新生成解决方案",
+          "desc": "清理并重新编译解决方案"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+A",
+          "name": "添加新项",
+          "desc": "向项目添加新项目"
+        },
+        {
+          "shortcutkey": "Shift+Alt+A",
+          "name": "添加现有项",
+          "desc": "向项目添加现有文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Alt+A",
+          "name": "添加新项目",
+          "desc": "向解决方案添加新项目"
+        },
+        {
+          "shortcutkey": "F7",
+          "name": "查看代码",
+          "desc": "切换到代码视图"
+        },
+        {
+          "shortcutkey": "Shift+F7",
+          "name": "查看设计器",
+          "desc": "切换到设计器视图"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "Name": "重构工具",
+      "Data": [
+        {
+          "shortcutkey": "F2",
+          "name": "重命名",
+          "desc": "重命名选中的符号"
+        },
+        {
+          "shortcutkey": "Ctrl+R, Ctrl+M",
+          "name": "提取方法",
+          "desc": "将选中代码提取为方法"
+        },
+        {
+          "shortcutkey": "Ctrl+R, Ctrl+E",
+          "name": "封装字段",
+          "desc": "为字段生成属性"
+        },
+        {
+          "shortcutkey": "Ctrl+R, Ctrl+I",
+          "name": "提取接口",
+          "desc": "从类中提取接口"
+        },
+        {
+          "shortcutkey": "Ctrl+R, Ctrl+V",
+          "name": "移除参数",
+          "desc": "移除方法参数"
+        },
+        {
+          "shortcutkey": "Ctrl+R, Ctrl+O",
+          "name": "重新排序参数",
+          "desc": "重新排序方法参数"
+        },
+        {
+          "shortcutkey": "Ctrl+.",
+          "name": "快速操作",
+          "desc": "显示快速操作和重构菜单"
+        },
+        {
+          "shortcutkey": "Alt+Enter",
+          "name": "显示潜在修复",
+          "desc": "显示错误修复建议"
+        }
+      ]
+    }
+  ]
+}

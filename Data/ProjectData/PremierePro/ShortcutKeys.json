@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19 16:02:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "时间轴编辑",
+      "Data": [
+        {
+          "shortcutkey": "V",
+          "name": "选择工具",
+          "desc": "激活选择工具进行剪辑选择"
+        },
+        {
+          "shortcutkey": "C",
+          "name": "剃刀工具",
+          "desc": "激活剃刀工具进行剪辑切割"
+        },
+        {
+          "shortcutkey": "A",
+          "name": "轨道选择工具",
+          "desc": "激活轨道选择工具"
+        },
+        {
+          "shortcutkey": "B",
+          "name": "波纹编辑工具",
+          "desc": "激活波纹编辑工具"
+        },
+        {
+          "shortcutkey": "N",
+          "name": "滚动编辑工具",
+          "desc": "激活滚动编辑工具"
+        },
+        {
+          "shortcutkey": "U",
+          "name": "滑移工具",
+          "desc": "激活滑移工具"
+        },
+        {
+          "shortcutkey": "Y",
+          "name": "滑动工具",
+          "desc": "激活滑动工具"
+        },
+        {
+          "shortcutkey": "P",
+          "name": "钢笔工具",
+          "desc": "激活钢笔工具"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "播放控制",
+      "Data": [
+        {
+          "shortcutkey": "Space",
+          "name": "播放/暂停",
+          "desc": "播放或暂停时间轴播放"
+        },
+        {
+          "shortcutkey": "J",
+          "name": "倒放",
+          "desc": "向后播放视频"
+        },
+        {
+          "shortcutkey": "K",
+          "name": "暂停",
+          "desc": "暂停视频播放"
+        },
+        {
+          "shortcutkey": "L",
+          "name": "正放",
+          "desc": "向前播放视频"
+        },
+        {
+          "shortcutkey": "Left Arrow",
+          "name": "上一帧",
+          "desc": "跳转到上一帧"
+        },
+        {
+          "shortcutkey": "Right Arrow",
+          "name": "下一帧",
+          "desc": "跳转到下一帧"
+        },
+        {
+          "shortcutkey": "Shift+Left",
+          "name": "跳转5帧(向前)",
+          "desc": "向前跳转5帧"
+        },
+        {
+          "shortcutkey": "Shift+Right",
+          "name": "跳转5帧(向后)",
+          "desc": "向后跳转5帧"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "剪辑操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+K",
+          "name": "剃刀切割",
+          "desc": "在播放头位置切割剪辑"
+        },
+        {
+          "shortcutkey": "Q",
+          "name": "波纹删除",
+          "desc": "删除剪辑并自动填补空隙"
+        },
+        {
+          "shortcutkey": "W",
+          "name": "提升",
+          "desc": "提升剪辑但保留空隙"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除",
+          "desc": "删除选中的剪辑"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "默认转场",
+          "desc": "应用默认视频转场"
+        },
+        {
+          "shortcutkey": "Shift+D",
+          "name": "默认音频转场",
+          "desc": "应用默认音频转场"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+D",
+          "name": "默认视频转场",
+          "desc": "应用默认视频转场效果"
+        },
+        {
+          "shortcutkey": "Alt+[",
+          "name": "设置入点",
+          "desc": "在播放头位置设置入点"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "标记和序列",
+      "Data": [
+        {
+          "shortcutkey": "M",
+          "name": "添加标记",
+          "desc": "在当前位置添加标记"
+        },
+        {
+          "shortcutkey": "Shift+M",
+          "name": "转到下个标记",
+          "desc": "跳转到下一个标记位置"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+M",
+          "name": "转到上个标记",
+          "desc": "跳转到上一个标记位置"
+        },
+        {
+          "shortcutkey": "I",
+          "name": "设置入点",
+          "desc": "设置剪辑入点"
+        },
+        {
+          "shortcutkey": "O",
+          "name": "设置出点",
+          "desc": "设置剪辑出点"
+        },
+        {
+          "shortcutkey": "X",
+          "name": "清除入出点",
+          "desc": "清除当前设置的入出点"
+        },
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建序列",
+          "desc": "创建新的编辑序列"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭序列",
+          "desc": "关闭当前编辑序列"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "音频编辑",
+      "Data": [
+        {
+          "shortcutkey": "Shift+G",
+          "name": "音频增益",
+          "desc": "调整音频剪辑增益"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "音频轨道混合器",
+          "desc": "打开音频轨道混合器"
+        },
+        {
+          "shortcutkey": "Shift+E",
+          "name": "启用音频轨道",
+          "desc": "启用或禁用音频轨道"
+        },
+        {
+          "shortcutkey": "Alt+L",
+          "name": "链接/取消链接",
+          "desc": "链接或取消链接音视频"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "音频通道映射",
+          "desc": "设置音频通道映射"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "链接媒体",
+          "desc": "重新链接丢失的媒体文件"
+        },
+        {
+          "shortcutkey": "Shift+A",
+          "name": "音频轨道目标",
+          "desc": "设置音频轨道目标"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+]",
+          "name": "匹配帧",
+          "desc": "匹配源监视器和节目监视器帧"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "效果和颜色",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+5",
+          "name": "效果控制面板",
+          "desc": "显示效果控制面板"
+        },
+        {
+          "shortcutkey": "Ctrl+9",
+          "name": "效果面板",
+          "desc": "显示效果面板"
+        },
+        {
+          "shortcutkey": "Ctrl+6",
+          "name": "音频轨道混合器",
+          "desc": "显示音频轨道混合器面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Y",
+          "name": "Lumetri颜色面板",
+          "desc": "显示Lumetri颜色调色面板"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "替换素材",
+          "desc": "替换时间轴上的素材"
+        },
+        {
+          "shortcutkey": "Alt+Shift+0",
+          "name": "嵌套序列",
+          "desc": "创建嵌套序列"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+V",
+          "name": "粘贴属性",
+          "desc": "粘贴复制的剪辑属性"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+C",
+          "name": "复制属性",
+          "desc": "复制剪辑的属性设置"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "导出和渲染",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+M",
+          "name": "导出媒体",
+          "desc": "打开导出媒体对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+M",
+          "name": "导出帧",
+          "desc": "导出当前帧为静态图像"
+        },
+        {
+          "shortcutkey": "Enter",
+          "name": "渲染入出点",
+          "desc": "渲染入出点之间的区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Enter",
+          "name": "渲染整个序列",
+          "desc": "渲染整个时间轴序列"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Enter",
+          "name": "渲染选择区域",
+          "desc": "渲染选中的时间轴区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Enter",
+          "name": "渲染工作区",
+          "desc": "渲染工作区域范围"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+I",
+          "name": "导入",
+          "desc": "导入媒体文件到项目"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "捕捉",
+          "desc": "开始视频捕捉"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "Name": "工作区管理",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+1",
+          "name": "项目面板",
+          "desc": "显示或隐藏项目面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+2",
+          "name": "源监视器",
+          "desc": "显示或隐藏源监视器"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+3",
+          "name": "时间轴",
+          "desc": "显示或隐藏时间轴面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+4",
+          "name": "节目监视器",
+          "desc": "显示或隐藏节目监视器"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+5",
+          "name": "效果控制",
+          "desc": "显示或隐藏效果控制面板"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+6",
+          "name": "音频轨道混合器",
+          "desc": "显示或隐藏音频轨道混合器"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+7",
+          "name": "媒体浏览器",
+          "desc": "显示或隐藏媒体浏览器"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+8",
+          "name": "信息面板",
+          "desc": "显示或隐藏信息面板"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "EditTime": "2024-12-19 15:30:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "WPS文字 (Word)",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择文档中的所有内容"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "加粗",
+          "desc": "设置选中文本为粗体"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "斜体",
+          "desc": "设置选中文本为斜体"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "下划线",
+          "desc": "为选中文本添加下划线"
+        },
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "查找",
+          "desc": "打开查找对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "替换",
+          "desc": "打开查找和替换对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "居中对齐",
+          "desc": "将段落设置为居中对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "左对齐",
+          "desc": "将段落设置为左对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "右对齐",
+          "desc": "将段落设置为右对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+K",
+          "name": "插入超链接",
+          "desc": "插入或编辑超链接"
+        },
+        {
+          "shortcutkey": "Ctrl+Enter",
+          "name": "分页符",
+          "desc": "插入分页符"
+        },
+        {
+          "shortcutkey": "Ctrl+Home",
+          "name": "文档开头",
+          "desc": "移动光标到文档开头"
+        },
+        {
+          "shortcutkey": "Ctrl+End",
+          "name": "文档结尾",
+          "desc": "移动光标到文档结尾"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存文档",
+          "desc": "保存当前文档"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "打印",
+          "desc": "打印当前文档"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "另存为",
+          "desc": "将文档另存为新文件"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "WPS演示 (PPT)",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+M",
+          "name": "新建幻灯片",
+          "desc": "在当前位置插入新幻灯片"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "开始放映",
+          "desc": "从第一张幻灯片开始放映"
+        },
+        {
+          "shortcutkey": "Shift+F5",
+          "name": "当前放映",
+          "desc": "从当前幻灯片开始放映"
+        },
+        {
+          "shortcutkey": "Esc",
+          "name": "结束放映",
+          "desc": "结束幻灯片放映"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制幻灯片",
+          "desc": "复制当前选中的幻灯片"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "组合对象",
+          "desc": "将选中对象组合"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "取消组合",
+          "desc": "取消对象组合"
+        },
+        {
+          "shortcutkey": "Alt+1",
+          "name": "普通视图",
+          "desc": "切换到普通视图"
+        },
+        {
+          "shortcutkey": "Alt+2",
+          "name": "幻灯片浏览",
+          "desc": "切换到幻灯片浏览视图"
+        },
+        {
+          "shortcutkey": "Space",
+          "name": "下一张",
+          "desc": "切换到下一张幻灯片"
+        },
+        {
+          "shortcutkey": "Backspace",
+          "name": "上一张",
+          "desc": "返回到上一张幻灯片"
+        },
+        {
+          "shortcutkey": "B",
+          "name": "黑屏",
+          "desc": "在放映中显示黑屏"
+        },
+        {
+          "shortcutkey": "W",
+          "name": "白屏",
+          "desc": "在放映中显示白屏"
+        },
+        {
+          "shortcutkey": "Alt+N+P",
+          "name": "插入图片",
+          "desc": "插入图片文件"
+        },
+        {
+          "shortcutkey": "Alt+N+SH",
+          "name": "插入形状",
+          "desc": "插入绘图形状"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+C",
+          "name": "复制格式",
+          "desc": "复制对象格式"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "WPS表格 (Excel)",
+      "Data": [
+        {
+          "shortcutkey": "F2",
+          "name": "编辑单元格",
+          "desc": "进入单元格编辑模式"
+        },
+        {
+          "shortcutkey": "Tab",
+          "name": "下一单元格",
+          "desc": "移动到右侧单元格"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "上一单元格",
+          "desc": "移动到左侧单元格"
+        },
+        {
+          "shortcutkey": "Enter",
+          "name": "确认输入",
+          "desc": "确认单元格输入并移到下一行"
+        },
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选工作表",
+          "desc": "选择整个工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift++",
+          "name": "插入行列",
+          "desc": "插入行或列"
+        },
+        {
+          "shortcutkey": "Ctrl+-",
+          "name": "删除行列",
+          "desc": "删除选中的行或列"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "向下填充",
+          "desc": "将上方单元格内容向下填充"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "向右填充",
+          "desc": "将左侧单元格内容向右填充"
+        },
+        {
+          "shortcutkey": "Alt+=",
+          "name": "自动求和",
+          "desc": "插入自动求和公式"
+        },
+        {
+          "shortcutkey": "F4",
+          "name": "绝对引用",
+          "desc": "切换单元格引用类型"
+        },
+        {
+          "shortcutkey": "Ctrl+`",
+          "name": "显示公式",
+          "desc": "显示/隐藏公式"
+        },
+        {
+          "shortcutkey": "Ctrl+1",
+          "name": "格式单元格",
+          "desc": "打开格式单元格对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+L",
+          "name": "自动筛选",
+          "desc": "启用/禁用自动筛选"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "创建图表",
+          "desc": "基于选中数据创建图表"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "创建表格",
+          "desc": "将数据转换为表格"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+$",
+          "name": "货币格式",
+          "desc": "应用货币格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+%",
+          "name": "百分比格式",
+          "desc": "应用百分比格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+#",
+          "name": "日期格式",
+          "desc": "应用日期格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Page Up",
+          "name": "上一工作表",
+          "desc": "切换到上一个工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Page Down",
+          "name": "下一工作表",
+          "desc": "切换到下一个工作表"
+        },
+        {
+          "shortcutkey": "Shift+F11",
+          "name": "插入工作表",
+          "desc": "插入新的工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+End",
+          "name": "选择到末尾",
+          "desc": "选择到数据区域末尾"
+        },
+        {
+          "shortcutkey": "Ctrl+Space",
+          "name": "选择列",
+          "desc": "选择整列"
+        },
+        {
+          "shortcutkey": "Shift+Space",
+          "name": "选择行",
+          "desc": "选择整行"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "定位",
+          "desc": "打开定位对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "查找",
+          "desc": "打开查找对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "替换",
+          "desc": "打开查找和替换对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Enter",
+          "name": "数组公式",
+          "desc": "输入数组公式"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "计算公式",
+          "desc": "计算选中的公式部分"
+        },
+        {
+          "shortcutkey": "Alt+D+S",
+          "name": "排序",
+          "desc": "打开排序对话框"
+        },
+        {
+          "shortcutkey": "Alt+D+P",
+          "name": "数据透视表",
+          "desc": "创建数据透视表"
+        }
+      ]
+    }
+  ]
+}

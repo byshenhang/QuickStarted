@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T12:00:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "文档编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择文档中的所有内容"
+        },
+        {
+          "shortcutkey": "Ctrl+C",
+          "name": "复制",
+          "desc": "复制选中的内容"
+        },
+        {
+          "shortcutkey": "Ctrl+V",
+          "name": "粘贴",
+          "desc": "粘贴剪贴板中的内容"
+        },
+        {
+          "shortcutkey": "Ctrl+X",
+          "name": "剪切",
+          "desc": "剪切选中的内容"
+        },
+        {
+          "shortcutkey": "Ctrl+Z",
+          "name": "撤销",
+          "desc": "撤销上一步操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Y",
+          "name": "重做",
+          "desc": "重做上一步撤销的操作"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除",
+          "desc": "删除选中的内容"
+        },
+        {
+          "shortcutkey": "Backspace",
+          "name": "退格删除",
+          "desc": "删除光标前的字符"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "格式设置",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "加粗",
+          "desc": "设置选中文本为粗体"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "斜体",
+          "desc": "设置选中文本为斜体"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "下划线",
+          "desc": "为选中文本添加下划线"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+>",
+          "name": "增大字号",
+          "desc": "增大选中文本的字号"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+<",
+          "name": "减小字号",
+          "desc": "减小选中文本的字号"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "居中对齐",
+          "desc": "将段落设置为居中对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "左对齐",
+          "desc": "将段落设置为左对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "右对齐",
+          "desc": "将段落设置为右对齐"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "导航移动",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Home",
+          "name": "文档开头",
+          "desc": "移动光标到文档开头"
+        },
+        {
+          "shortcutkey": "Ctrl+End",
+          "name": "文档结尾",
+          "desc": "移动光标到文档结尾"
+        },
+        {
+          "shortcutkey": "Ctrl+Left",
+          "name": "上一个单词",
+          "desc": "移动光标到上一个单词"
+        },
+        {
+          "shortcutkey": "Ctrl+Right",
+          "name": "下一个单词",
+          "desc": "移动光标到下一个单词"
+        },
+        {
+          "shortcutkey": "Ctrl+Up",
+          "name": "上一段",
+          "desc": "移动光标到上一段"
+        },
+        {
+          "shortcutkey": "Ctrl+Down",
+          "name": "下一段",
+          "desc": "移动光标到下一段"
+        },
+        {
+          "shortcutkey": "Page Up",
+          "name": "上一页",
+          "desc": "向上翻页"
+        },
+        {
+          "shortcutkey": "Page Down",
+          "name": "下一页",
+          "desc": "向下翻页"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "查找替换",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "查找",
+          "desc": "打开查找对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "替换",
+          "desc": "打开查找和替换对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "定位",
+          "desc": "打开定位对话框"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "查找下一个",
+          "desc": "查找下一个匹配项"
+        },
+        {
+          "shortcutkey": "Shift+F3",
+          "name": "查找上一个",
+          "desc": "查找上一个匹配项"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "高级查找",
+          "desc": "打开高级查找选项"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+Y",
+          "name": "重复查找",
+          "desc": "重复上次查找操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+F",
+          "name": "查找格式",
+          "desc": "查找特定格式的文本"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "插入功能",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+K",
+          "name": "插入超链接",
+          "desc": "插入或编辑超链接"
+        },
+        {
+          "shortcutkey": "Alt+Shift+D",
+          "name": "插入日期",
+          "desc": "插入当前日期"
+        },
+        {
+          "shortcutkey": "Alt+Shift+T",
+          "name": "插入时间",
+          "desc": "插入当前时间"
+        },
+        {
+          "shortcutkey": "Ctrl+Enter",
+          "name": "分页符",
+          "desc": "插入分页符"
+        },
+        {
+          "shortcutkey": "Shift+Enter",
+          "name": "换行符",
+          "desc": "插入换行符"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Enter",
+          "name": "分栏符",
+          "desc": "插入分栏符"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+F",
+          "name": "插入脚注",
+          "desc": "插入脚注"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+D",
+          "name": "插入尾注",
+          "desc": "插入尾注"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "表格操作",
+      "Data": [
+        {
+          "shortcutkey": "Alt+Shift+Up",
+          "name": "上移行",
+          "desc": "将当前行向上移动"
+        },
+        {
+          "shortcutkey": "Alt+Shift+Down",
+          "name": "下移行",
+          "desc": "将当前行向下移动"
+        },
+        {
+          "shortcutkey": "Tab",
+          "name": "下一单元格",
+          "desc": "移动到下一个单元格"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "上一单元格",
+          "desc": "移动到上一个单元格"
+        },
+        {
+          "shortcutkey": "Alt+Home",
+          "name": "行首单元格",
+          "desc": "移动到行首单元格"
+        },
+        {
+          "shortcutkey": "Alt+End",
+          "name": "行尾单元格",
+          "desc": "移动到行尾单元格"
+        },
+        {
+          "shortcutkey": "Alt+Page Up",
+          "name": "列首单元格",
+          "desc": "移动到列首单元格"
+        },
+        {
+          "shortcutkey": "Alt+Page Down",
+          "name": "列尾单元格",
+          "desc": "移动到列尾单元格"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "文档视图",
+      "Data": [
+        {
+          "shortcutkey": "Alt+Ctrl+P",
+          "name": "页面视图",
+          "desc": "切换到页面布局视图"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+N",
+          "name": "普通视图",
+          "desc": "切换到普通视图"
+        },
+        {
+          "shortcutkey": "Alt+Ctrl+O",
+          "name": "大纲视图",
+          "desc": "切换到大纲视图"
+        },
+        {
+          "shortcutkey": "Ctrl+F2",
+          "name": "打印预览",
+          "desc": "打开打印预览"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "阅读模式",
+          "desc": "切换到阅读模式"
+        },
+        {
+          "shortcutkey": "Ctrl+F1",
+          "name": "功能区",
+          "desc": "显示/隐藏功能区"
+        },
+        {
+          "shortcutkey": "Alt+W+Q",
+          "name": "缩放",
+          "desc": "打开缩放对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+0",
+          "name": "适合页面",
+          "desc": "缩放到适合页面宽度"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建文档",
+          "desc": "创建新的Word文档"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文档",
+          "desc": "打开现有文档"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存文档",
+          "desc": "保存当前文档"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "另存为",
+          "desc": "将文档另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "打印",
+          "desc": "打印当前文档"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭文档",
+          "desc": "关闭当前文档"
+        },
+        {
+          "shortcutkey": "Alt+F4",
+          "name": "退出Word",
+          "desc": "退出Microsoft Word"
+        },
+        {
+          "shortcutkey": "F1",
+          "name": "帮助",
+          "desc": "打开Word帮助"
+        }
+      ]
+    }
+  ]
+}

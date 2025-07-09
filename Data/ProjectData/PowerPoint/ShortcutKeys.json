@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T12:00:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "幻灯片编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+M",
+          "name": "新建幻灯片",
+          "desc": "在当前位置插入新幻灯片"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制幻灯片",
+          "desc": "复制当前选中的幻灯片"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除幻灯片",
+          "desc": "删除当前选中的幻灯片"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+D",
+          "name": "复制对象",
+          "desc": "复制选中的对象"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "组合对象",
+          "desc": "将选中对象组合"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "取消组合",
+          "desc": "取消对象组合"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+C",
+          "name": "复制格式",
+          "desc": "复制对象格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+V",
+          "name": "粘贴格式",
+          "desc": "粘贴复制的格式"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "文本编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "加粗",
+          "desc": "设置选中文本为粗体"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "斜体",
+          "desc": "设置选中文本为斜体"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "下划线",
+          "desc": "为选中文本添加下划线"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+>",
+          "name": "增大字号",
+          "desc": "增大选中文本的字号"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+<",
+          "name": "减小字号",
+          "desc": "减小选中文本的字号"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "居中对齐",
+          "desc": "将文本设置为居中对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "左对齐",
+          "desc": "将文本设置为左对齐"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "右对齐",
+          "desc": "将文本设置为右对齐"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "演示控制",
+      "Data": [
+        {
+          "shortcutkey": "F5",
+          "name": "开始放映",
+          "desc": "从第一张幻灯片开始放映"
+        },
+        {
+          "shortcutkey": "Shift+F5",
+          "name": "当前放映",
+          "desc": "从当前幻灯片开始放映"
+        },
+        {
+          "shortcutkey": "Esc",
+          "name": "结束放映",
+          "desc": "结束幻灯片放映"
+        },
+        {
+          "shortcutkey": "Space",
+          "name": "下一张",
+          "desc": "切换到下一张幻灯片"
+        },
+        {
+          "shortcutkey": "Backspace",
+          "name": "上一张",
+          "desc": "返回到上一张幻灯片"
+        },
+        {
+          "shortcutkey": "B",
+          "name": "黑屏",
+          "desc": "在放映中显示黑屏"
+        },
+        {
+          "shortcutkey": "W",
+          "name": "白屏",
+          "desc": "在放映中显示白屏"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "激光笔",
+          "desc": "启用激光笔功能"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "视图切换",
+      "Data": [
+        {
+          "shortcutkey": "Alt+1",
+          "name": "普通视图",
+          "desc": "切换到普通视图"
+        },
+        {
+          "shortcutkey": "Alt+2",
+          "name": "幻灯片浏览",
+          "desc": "切换到幻灯片浏览视图"
+        },
+        {
+          "shortcutkey": "Alt+3",
+          "name": "备注页",
+          "desc": "切换到备注页视图"
+        },
+        {
+          "shortcutkey": "Alt+4",
+          "name": "讲义母版",
+          "desc": "切换到讲义母版视图"
+        },
+        {
+          "shortcutkey": "Alt+5",
+          "name": "幻灯片母版",
+          "desc": "切换到幻灯片母版视图"
+        },
+        {
+          "shortcutkey": "Ctrl+F1",
+          "name": "功能区",
+          "desc": "显示/隐藏功能区"
+        },
+        {
+          "shortcutkey": "F6",
+          "name": "切换窗格",
+          "desc": "在不同窗格间切换"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Tab",
+          "name": "上一个窗格",
+          "desc": "切换到上一个窗格"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "动画效果",
+      "Data": [
+        {
+          "shortcutkey": "Alt+A+A",
+          "name": "添加动画",
+          "desc": "为选中对象添加动画效果"
+        },
+        {
+          "shortcutkey": "Alt+A+P",
+          "name": "动画窗格",
+          "desc": "打开动画窗格"
+        },
+        {
+          "shortcutkey": "Alt+A+V",
+          "name": "预览动画",
+          "desc": "预览当前幻灯片动画"
+        },
+        {
+          "shortcutkey": "Shift+F5",
+          "name": "播放动画",
+          "desc": "播放当前幻灯片动画"
+        },
+        {
+          "shortcutkey": "Alt+A+T",
+          "name": "动画计时",
+          "desc": "设置动画计时选项"
+        },
+        {
+          "shortcutkey": "Alt+A+E",
+          "name": "动画效果选项",
+          "desc": "打开动画效果选项"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F5",
+          "name": "自定义动画",
+          "desc": "打开自定义动画面板"
+        },
+        {
+          "shortcutkey": "Alt+A+R",
+          "name": "删除动画",
+          "desc": "删除选中对象的动画"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "插入对象",
+      "Data": [
+        {
+          "shortcutkey": "Alt+N+P",
+          "name": "插入图片",
+          "desc": "插入图片文件"
+        },
+        {
+          "shortcutkey": "Alt+N+SH",
+          "name": "插入形状",
+          "desc": "插入绘图形状"
+        },
+        {
+          "shortcutkey": "Alt+N+T",
+          "name": "插入表格",
+          "desc": "插入表格"
+        },
+        {
+          "shortcutkey": "Alt+N+C",
+          "name": "插入图表",
+          "desc": "插入图表"
+        },
+        {
+          "shortcutkey": "Alt+N+X",
+          "name": "插入文本框",
+          "desc": "插入文本框"
+        },
+        {
+          "shortcutkey": "Alt+N+K",
+          "name": "插入超链接",
+          "desc": "插入或编辑超链接"
+        },
+        {
+          "shortcutkey": "Alt+N+A",
+          "name": "插入音频",
+          "desc": "插入音频文件"
+        },
+        {
+          "shortcutkey": "Alt+N+V",
+          "name": "插入视频",
+          "desc": "插入视频文件"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "格式设置",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+>",
+          "name": "增大字体",
+          "desc": "增大选中文本字体大小"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+<",
+          "name": "减小字体",
+          "desc": "减小选中文本字体大小"
+        },
+        {
+          "shortcutkey": "Alt+H+FC",
+          "name": "字体颜色",
+          "desc": "更改字体颜色"
+        },
+        {
+          "shortcutkey": "Alt+H+H",
+          "name": "突出显示",
+          "desc": "突出显示文本"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "字体对话框",
+          "desc": "打开字体格式对话框"
+        },
+        {
+          "shortcutkey": "Alt+H+G",
+          "name": "对象格式",
+          "desc": "设置对象格式"
+        },
+        {
+          "shortcutkey": "F4",
+          "name": "重复格式",
+          "desc": "重复上一次格式操作"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+P",
+          "name": "段落对话框",
+          "desc": "打开段落格式对话框"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建演示文稿",
+          "desc": "创建新的PowerPoint演示文稿"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开现有演示文稿"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存",
+          "desc": "保存当前演示文稿"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "另存为",
+          "desc": "将演示文稿另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "打印",
+          "desc": "打印当前演示文稿"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭",
+          "desc": "关闭当前演示文稿"
+        },
+        {
+          "shortcutkey": "Alt+F4",
+          "name": "退出PowerPoint",
+          "desc": "退出Microsoft PowerPoint"
+        },
+        {
+          "shortcutkey": "F1",
+          "name": "帮助",
+          "desc": "打开PowerPoint帮助"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T11:00:00",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "代码导航",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "转到类型",
+          "desc": "快速搜索并跳转到类型"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+N",
+          "name": "转到文件",
+          "desc": "快速搜索并打开文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Shift+N",
+          "name": "转到符号",
+          "desc": "搜索方法、属性等符号"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "转到声明",
+          "desc": "跳转到变量或方法声明"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+B",
+          "name": "转到实现",
+          "desc": "跳转到接口实现"
+        },
+        {
+          "shortcutkey": "Alt+F7",
+          "name": "查找用法",
+          "desc": "查找符号的所有使用位置"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "最近文件",
+          "desc": "显示最近打开的文件列表"
+        },
+        {
+          "shortcutkey": "Ctrl+F12",
+          "name": "文件结构",
+          "desc": "显示当前文件的结构大纲"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "代码编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Space",
+          "name": "代码补全",
+          "desc": "触发智能代码补全"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Space",
+          "name": "智能补全",
+          "desc": "类型感知的智能补全"
+        },
+        {
+          "shortcutkey": "Alt+Insert",
+          "name": "生成代码",
+          "desc": "生成构造函数、属性等"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+T",
+          "name": "环绕代码",
+          "desc": "用if、try-catch等包围代码"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "展开选择",
+          "desc": "智能扩展选择范围"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+W",
+          "name": "收缩选择",
+          "desc": "收缩选择范围"
+        },
+        {
+          "shortcutkey": "Ctrl+/",
+          "name": "注释行",
+          "desc": "切换行注释"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+/",
+          "name": "块注释",
+          "desc": "切换块注释"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "重构操作",
+      "Data": [
+        {
+          "shortcutkey": "Shift+F6",
+          "name": "重命名",
+          "desc": "安全重命名变量、方法、类等"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+V",
+          "name": "提取变量",
+          "desc": "将表达式提取为变量"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+M",
+          "name": "提取方法",
+          "desc": "将代码块提取为方法"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+F",
+          "name": "提取字段",
+          "desc": "将表达式提取为字段"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+N",
+          "name": "内联",
+          "desc": "内联变量或方法"
+        },
+        {
+          "shortcutkey": "F6",
+          "name": "移动",
+          "desc": "移动类或方法到其他位置"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "复制",
+          "desc": "复制类或文件"
+        },
+        {
+          "shortcutkey": "Alt+Delete",
+          "name": "安全删除",
+          "desc": "安全删除，检查引用"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "调试运行",
+      "Data": [
+        {
+          "shortcutkey": "Shift+F10",
+          "name": "运行",
+          "desc": "运行当前配置"
+        },
+        {
+          "shortcutkey": "Shift+F9",
+          "name": "调试",
+          "desc": "调试当前配置"
+        },
+        {
+          "shortcutkey": "Ctrl+F8",
+          "name": "切换断点",
+          "desc": "在当前行设置或取消断点"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F8",
+          "name": "查看断点",
+          "desc": "查看所有断点"
+        },
+        {
+          "shortcutkey": "F8",
+          "name": "步过",
+          "desc": "调试时步过当前行"
+        },
+        {
+          "shortcutkey": "F7",
+          "name": "步入",
+          "desc": "调试时步入方法"
+        },
+        {
+          "shortcutkey": "Shift+F8",
+          "name": "步出",
+          "desc": "调试时步出当前方法"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "恢复程序",
+          "desc": "继续执行程序"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "C#/.NET专用",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+F9",
+          "name": "构建项目",
+          "desc": "编译当前项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F9",
+          "name": "重新构建",
+          "desc": "重新构建解决方案"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+L",
+          "name": "格式化代码",
+          "desc": "格式化当前文件或选中代码"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+O",
+          "name": "优化using",
+          "desc": "优化using语句"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F10",
+          "name": "运行测试",
+          "desc": "运行单元测试"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Shift+T",
+          "name": "重构菜单",
+          "desc": "显示重构操作菜单"
+        },
+        {
+          "shortcutkey": "Alt+Enter",
+          "name": "快速修复",
+          "desc": "显示意图操作和快速修复"
+        },
+        {
+          "shortcutkey": "Ctrl+J",
+          "name": "实时模板",
+          "desc": "插入实时代码模板"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "版本控制",
+      "Data": [
+        {
+          "shortcutkey": "Alt+`",
+          "name": "VCS操作",
+          "desc": "显示VCS操作弹窗"
+        },
+        {
+          "shortcutkey": "Ctrl+K",
+          "name": "提交",
+          "desc": "提交更改"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "更新项目",
+          "desc": "从VCS更新项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+K",
+          "name": "推送",
+          "desc": "推送到远程仓库"
+        },
+        {
+          "shortcutkey": "Alt+Shift+H",
+          "name": "显示历史",
+          "desc": "显示文件历史"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "比较文件",
+          "desc": "比较文件差异"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Z",
+          "name": "回滚更改",
+          "desc": "回滚本地更改"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+`",
+          "name": "分支操作",
+          "desc": "Git分支操作"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "工具窗口",
+      "Data": [
+        {
+          "shortcutkey": "Alt+1",
+          "name": "项目工具窗口",
+          "desc": "显示/隐藏项目窗口"
+        },
+        {
+          "shortcutkey": "Alt+F12",
+          "name": "终端",
+          "desc": "打开终端窗口"
+        },
+        {
+          "shortcutkey": "Alt+4",
+          "name": "运行窗口",
+          "desc": "显示运行工具窗口"
+        },
+        {
+          "shortcutkey": "Alt+5",
+          "name": "调试窗口",
+          "desc": "显示调试工具窗口"
+        },
+        {
+          "shortcutkey": "Alt+6",
+          "name": "TODO窗口",
+          "desc": "显示TODO工具窗口"
+        },
+        {
+          "shortcutkey": "Alt+7",
+          "name": "结构窗口",
+          "desc": "显示结构工具窗口"
+        },
+        {
+          "shortcutkey": "Alt+8",
+          "name": "NuGet窗口",
+          "desc": "显示NuGet包管理器"
+        },
+        {
+          "shortcutkey": "Alt+9",
+          "name": "版本控制",
+          "desc": "显示版本控制窗口"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "Name": "搜索替换",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "全局搜索",
+          "desc": "在项目中搜索"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+R",
+          "name": "全局替换",
+          "desc": "在项目中替换"
+        },
+        {
+          "shortcutkey": "Double Shift",
+          "name": "搜索所有地方",
+          "desc": "全局搜索任何内容"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+A",
+          "name": "查找操作",
+          "desc": "搜索IDE操作和设置"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "查找下一个",
+          "desc": "查找下一个匹配项"
+        },
+        {
+          "shortcutkey": "Shift+F3",
+          "name": "查找上一个",
+          "desc": "查找上一个匹配项"
+        },
+        {
+          "shortcutkey": "Alt+J",
+          "name": "选择下一个",
+          "desc": "选择下一个相同单词"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+Shift+J",
+          "name": "选择所有",
+          "desc": "选择所有相同单词"
+        }
+      ]
+    }
+  ]
+}

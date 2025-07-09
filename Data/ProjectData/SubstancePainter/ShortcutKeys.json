@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T12:00:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "纹理绘制",
+      "Data": [
+        {
+          "shortcutkey": "B",
+          "name": "画笔工具",
+          "desc": "选择画笔工具进行纹理绘制"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "橡皮擦工具",
+          "desc": "选择橡皮擦工具擦除纹理"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "填充工具",
+          "desc": "使用填充工具快速填充区域"
+        },
+        {
+          "shortcutkey": "P",
+          "name": "投影工具",
+          "desc": "使用投影工具投射纹理"
+        },
+        {
+          "shortcutkey": "C",
+          "name": "克隆工具",
+          "desc": "使用克隆工具复制纹理区域"
+        },
+        {
+          "shortcutkey": "S",
+          "name": "涂抹工具",
+          "desc": "使用涂抹工具混合纹理"
+        },
+        {
+          "shortcutkey": "[",
+          "name": "减小笔刷大小",
+          "desc": "减小当前笔刷的大小"
+        },
+        {
+          "shortcutkey": "]",
+          "name": "增大笔刷大小",
+          "desc": "增大当前笔刷的大小"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "材质编辑",
+      "Data": [
+        {
+          "shortcutkey": "M",
+          "name": "材质模式",
+          "desc": "切换到材质编辑模式"
+        },
+        {
+          "shortcutkey": "Shift+M",
+          "name": "遮罩模式",
+          "desc": "切换到遮罩编辑模式"
+        },
+        {
+          "shortcutkey": "Alt+M",
+          "name": "混合模式",
+          "desc": "切换材质混合模式"
+        },
+        {
+          "shortcutkey": "L",
+          "name": "图层面板",
+          "desc": "显示/隐藏图层面板"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "创建组",
+          "desc": "将选中图层创建为组"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "取消组合",
+          "desc": "取消图层组合"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制图层",
+          "desc": "复制当前选中的图层"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除图层",
+          "desc": "删除当前选中的图层"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "视图控制",
+      "Data": [
+        {
+          "shortcutkey": "Alt+LMB",
+          "name": "旋转视图",
+          "desc": "按住Alt+左键拖拽旋转3D视图"
+        },
+        {
+          "shortcutkey": "Alt+MMB",
+          "name": "平移视图",
+          "desc": "按住Alt+中键拖拽平移视图"
+        },
+        {
+          "shortcutkey": "Alt+RMB",
+          "name": "缩放视图",
+          "desc": "按住Alt+右键拖拽缩放视图"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "适应视图",
+          "desc": "将模型适应到当前视图"
+        },
+        {
+          "shortcutkey": "1",
+          "name": "材质预览",
+          "desc": "切换到材质预览模式"
+        },
+        {
+          "shortcutkey": "2",
+          "name": "基础色预览",
+          "desc": "切换到基础色预览模式"
+        },
+        {
+          "shortcutkey": "3",
+          "name": "法线预览",
+          "desc": "切换到法线贴图预览模式"
+        },
+        {
+          "shortcutkey": "4",
+          "name": "粗糙度预览",
+          "desc": "切换到粗糙度预览模式"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "UV编辑",
+      "Data": [
+        {
+          "shortcutkey": "U",
+          "name": "UV视图",
+          "desc": "切换到UV编辑视图"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "展开UV",
+          "desc": "自动展开选中面的UV"
+        },
+        {
+          "shortcutkey": "Shift+U",
+          "name": "UV缝合",
+          "desc": "缝合选中的UV边"
+        },
+        {
+          "shortcutkey": "Alt+U",
+          "name": "UV分离",
+          "desc": "分离选中的UV边"
+        },
+        {
+          "shortcutkey": "T",
+          "name": "纹理集",
+          "desc": "管理纹理集设置"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "创建纹理集",
+          "desc": "为选中面创建新纹理集"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "旋转UV",
+          "desc": "旋转选中的UV岛"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "重置UV",
+          "desc": "重置UV到默认状态"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "渲染设置",
+      "Data": [
+        {
+          "shortcutkey": "F9",
+          "name": "渲染预览",
+          "desc": "开始渲染当前视图"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "渲染设置",
+          "desc": "打开渲染设置面板"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "全屏渲染",
+          "desc": "全屏显示渲染结果"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "保存渲染",
+          "desc": "保存当前渲染结果"
+        },
+        {
+          "shortcutkey": "Ctrl+F9",
+          "name": "批量渲染",
+          "desc": "批量渲染所有纹理集"
+        },
+        {
+          "shortcutkey": "Shift+F9",
+          "name": "快速渲染",
+          "desc": "使用快速设置渲染"
+        },
+        {
+          "shortcutkey": "Alt+F9",
+          "name": "高质量渲染",
+          "desc": "使用高质量设置渲染"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F9",
+          "name": "渲染动画",
+          "desc": "渲染动画序列"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "滤镜效果",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "添加滤镜",
+          "desc": "为当前图层添加滤镜效果"
+        },
+        {
+          "shortcutkey": "Shift+F",
+          "name": "滤镜库",
+          "desc": "打开滤镜效果库"
+        },
+        {
+          "shortcutkey": "Alt+F",
+          "name": "滤镜预览",
+          "desc": "预览滤镜效果"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "应用滤镜",
+          "desc": "应用当前滤镜设置"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+F",
+          "name": "重置滤镜",
+          "desc": "重置滤镜参数到默认值"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "滤镜面板",
+          "desc": "显示/隐藏滤镜面板"
+        },
+        {
+          "shortcutkey": "Ctrl+1",
+          "name": "模糊滤镜",
+          "desc": "应用模糊滤镜效果"
+        },
+        {
+          "shortcutkey": "Ctrl+2",
+          "name": "锐化滤镜",
+          "desc": "应用锐化滤镜效果"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建项目",
+          "desc": "创建新的Substance Painter项目"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开项目",
+          "desc": "打开现有的项目文件"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存项目",
+          "desc": "保存当前项目"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+S",
+          "name": "另存为",
+          "desc": "将项目另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "导出纹理",
+          "desc": "导出纹理贴图"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "导入资源",
+          "desc": "导入外部资源文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+E",
+          "name": "批量导出",
+          "desc": "批量导出所有纹理"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+S",
+          "name": "保存预设",
+          "desc": "保存当前设置为预设"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "界面控制",
+      "Data": [
+        {
+          "shortcutkey": "Tab",
+          "name": "隐藏界面",
+          "desc": "隐藏/显示所有界面面板"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "全屏模式",
+          "desc": "切换全屏工作模式"
+        },
+        {
+          "shortcutkey": "Ctrl+Tab",
+          "name": "切换工作区",
+          "desc": "在不同工作区间切换"
+        },
+        {
+          "shortcutkey": "F1",
+          "name": "帮助文档",
+          "desc": "打开帮助文档"
+        },
+        {
+          "shortcutkey": "F2",
+          "name": "重命名",
+          "desc": "重命名选中项目"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "刷新视图",
+          "desc": "刷新当前视图显示"
+        },
+        {
+          "shortcutkey": "Ctrl+,",
+          "name": "首选项",
+          "desc": "打开软件首选项设置"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+,",
+          "name": "项目设置",
+          "desc": "打开当前项目设置"
+        }
+      ]
+    }
+  ]
+}

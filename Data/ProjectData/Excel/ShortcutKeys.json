@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19T12:00:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "单元格编辑",
+      "Data": [
+        {
+          "shortcutkey": "F2",
+          "name": "编辑单元格",
+          "desc": "进入单元格编辑模式"
+        },
+        {
+          "shortcutkey": "Enter",
+          "name": "确认输入",
+          "desc": "确认单元格输入并移到下一行"
+        },
+        {
+          "shortcutkey": "Tab",
+          "name": "下一个单元格",
+          "desc": "移动到右侧单元格"
+        },
+        {
+          "shortcutkey": "Shift+Tab",
+          "name": "上一个单元格",
+          "desc": "移动到左侧单元格"
+        },
+        {
+          "shortcutkey": "Esc",
+          "name": "取消编辑",
+          "desc": "取消单元格编辑"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除内容",
+          "desc": "删除选中单元格内容"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "向下填充",
+          "desc": "将上方单元格内容向下填充"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "向右填充",
+          "desc": "将左侧单元格内容向右填充"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "选择操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+A",
+          "name": "全选",
+          "desc": "选择整个工作表"
+        },
+        {
+          "shortcutkey": "Shift+Space",
+          "name": "选择行",
+          "desc": "选择整行"
+        },
+        {
+          "shortcutkey": "Ctrl+Space",
+          "name": "选择列",
+          "desc": "选择整列"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+End",
+          "name": "选择到末尾",
+          "desc": "选择到数据区域末尾"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Home",
+          "name": "选择到开头",
+          "desc": "选择到工作表开头"
+        },
+        {
+          "shortcutkey": "Shift+Click",
+          "name": "扩展选择",
+          "desc": "扩展选择区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Click",
+          "name": "多选单元格",
+          "desc": "选择多个不连续单元格"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "定位",
+          "desc": "打开定位对话框"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "公式计算",
+      "Data": [
+        {
+          "shortcutkey": "=",
+          "name": "开始公式",
+          "desc": "开始输入公式"
+        },
+        {
+          "shortcutkey": "F4",
+          "name": "绝对引用",
+          "desc": "切换单元格引用类型"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Enter",
+          "name": "数组公式",
+          "desc": "输入数组公式"
+        },
+        {
+          "shortcutkey": "Ctrl+`",
+          "name": "显示公式",
+          "desc": "显示/隐藏公式"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "计算公式",
+          "desc": "计算选中的公式部分"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F3",
+          "name": "创建名称",
+          "desc": "从选择创建名称"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "粘贴名称",
+          "desc": "粘贴已定义的名称"
+        },
+        {
+          "shortcutkey": "Alt+=",
+          "name": "自动求和",
+          "desc": "插入自动求和公式"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "格式设置",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+1",
+          "name": "格式单元格",
+          "desc": "打开格式单元格对话框"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "加粗",
+          "desc": "设置字体为粗体"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "斜体",
+          "desc": "设置字体为斜体"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "下划线",
+          "desc": "添加下划线"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+$",
+          "name": "货币格式",
+          "desc": "应用货币格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+%",
+          "name": "百分比格式",
+          "desc": "应用百分比格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+#",
+          "name": "日期格式",
+          "desc": "应用日期格式"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+!",
+          "name": "数字格式",
+          "desc": "应用数字格式"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "行列操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift++",
+          "name": "插入行列",
+          "desc": "插入行或列"
+        },
+        {
+          "shortcutkey": "Ctrl+-",
+          "name": "删除行列",
+          "desc": "删除选中的行或列"
+        },
+        {
+          "shortcutkey": "Alt+H+O+H",
+          "name": "隐藏行",
+          "desc": "隐藏选中的行"
+        },
+        {
+          "shortcutkey": "Alt+H+O+C",
+          "name": "隐藏列",
+          "desc": "隐藏选中的列"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+(",
+          "name": "取消隐藏行",
+          "desc": "取消隐藏选中的行"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+)",
+          "name": "取消隐藏列",
+          "desc": "取消隐藏选中的列"
+        },
+        {
+          "shortcutkey": "Alt+H+O+R",
+          "name": "行高",
+          "desc": "设置行高"
+        },
+        {
+          "shortcutkey": "Alt+H+O+W",
+          "name": "列宽",
+          "desc": "设置列宽"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "数据处理",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+Shift+L",
+          "name": "自动筛选",
+          "desc": "启用/禁用自动筛选"
+        },
+        {
+          "shortcutkey": "Alt+D+S",
+          "name": "排序",
+          "desc": "打开排序对话框"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "创建图表",
+          "desc": "基于选中数据创建图表"
+        },
+        {
+          "shortcutkey": "Alt+D+P",
+          "name": "数据透视表",
+          "desc": "创建数据透视表"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "创建表格",
+          "desc": "将数据转换为表格"
+        },
+        {
+          "shortcutkey": "Alt+D+T",
+          "name": "分列",
+          "desc": "文本分列向导"
+        },
+        {
+          "shortcutkey": "Alt+D+V",
+          "name": "数据验证",
+          "desc": "设置数据验证规则"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+F",
+          "name": "查找替换",
+          "desc": "打开查找和替换对话框"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "工作表操作",
+      "Data": [
+        {
+          "shortcutkey": "Shift+F11",
+          "name": "插入工作表",
+          "desc": "插入新的工作表"
+        },
+        {
+          "shortcutkey": "Alt+H+D+S",
+          "name": "删除工作表",
+          "desc": "删除当前工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Page Up",
+          "name": "上一工作表",
+          "desc": "切换到上一个工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Page Down",
+          "name": "下一工作表",
+          "desc": "切换到下一个工作表"
+        },
+        {
+          "shortcutkey": "Alt+H+O+R",
+          "name": "重命名工作表",
+          "desc": "重命名当前工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Page Up",
+          "name": "选择到上一表",
+          "desc": "选择到上一个工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Page Down",
+          "name": "选择到下一表",
+          "desc": "选择到下一个工作表"
+        },
+        {
+          "shortcutkey": "Alt+H+O+T",
+          "name": "工作表标签颜色",
+          "desc": "设置工作表标签颜色"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "文件操作",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建工作簿",
+          "desc": "创建新的Excel工作簿"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开现有工作簿"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存",
+          "desc": "保存当前工作簿"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "另存为",
+          "desc": "将工作簿另存为新文件"
+        },
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "打印",
+          "desc": "打印当前工作表"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭工作簿",
+          "desc": "关闭当前工作簿"
+        },
+        {
+          "shortcutkey": "Alt+F4",
+          "name": "退出Excel",
+          "desc": "退出Microsoft Excel"
+        },
+        {
+          "shortcutkey": "F1",
+          "name": "帮助",
+          "desc": "打开Excel帮助"
+        }
+      ]
+    }
+  ]
+}

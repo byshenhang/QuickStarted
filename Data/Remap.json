@@ -1,5 +1,5 @@
 {
-    "EditTime": "2024-01-15 10:30:00.000000",
+    "EditTime": "2024-12-19T15:45:00",
     "MapData" : [
        {
          "3dMax" : [
@@ -30,11 +30,113 @@
          ]
        },
        {
+         "AfterEffects" : [
+            "aftereffects",
+            "AfterFX.exe",
+            "ae",
+            "after effects",
+            "adobe after effects"
+         ]
+       },
+       {
+         "PremierePro" : [
+            "premiere",
+            "Adobe Premiere Pro.exe",
+            "pr",
+            "premiere pro",
+            "adobe premiere"
+         ]
+       },
+       {
+         "PyCharm" : [
+            "pycharm64",
+            "pycharm",
+            "jetbrains pycharm"
+         ]
+       },
+       {
+         "GoLand" : [
+            "goland64",
+            "goland",
+            "jetbrains goland"
+         ]
+       },
+       {
+         "IntelliJIDEA" : [
+            "idea64",
+            "idea",
+            "intellij idea",
+            "jetbrains idea"
+         ]
+       },
+       {
+         "Rider" : [
+            "rider64",
+            "rider",
+            "jetbrains rider"
+         ]
+       },
+       {
          "VSCode" : [
             "code",
             "code.exe",
             "vscode",
             "Code.exe"
+         ]
+       },
+       {
+         "VisualStudio" : [
+            "devenv",
+            "devenv.exe",
+            "VisualStudio.exe",
+            "vs",
+            "vstudio"
+         ]
+       },
+       {
+         "ZBrush" : [
+            "zbrush",
+            "zbrush.exe",
+            "ZBrush.exe"
+         ]
+       },
+       {
+         "SubstancePainter" : [
+            "Substance 3D Painter",
+            "Substance Painter",
+            "painter.exe"
+         ]
+       },
+       {
+         "Word" : [
+            "winword",
+            "winword.exe",
+            "WINWORD.EXE"
+         ]
+       },
+       {
+         "PowerPoint" : [
+            "powerpnt",
+            "powerpnt.exe",
+            "POWERPNT.EXE"
+         ]
+       },
+       {
+         "Excel" : [
+            "excel",
+            "excel.exe",
+            "EXCEL.EXE"
+         ]
+       },
+       {
+         "WPS" : [
+            "wpsoffice",
+            "wps",
+            "wps.exe",
+            "et",
+            "et.exe",
+            "wpp",
+            "wpp.exe"
          ]
        }
     ]

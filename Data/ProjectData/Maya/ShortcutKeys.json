@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-01-15 10:30:00.000000",
+  "Pages": [
+    {
+      "index": 1,
+      "Name": "选择和变换",
+      "Data": [
+        {
+          "shortcutkey": "Q",
+          "name": "选择工具",
+          "desc": "激活选择工具模式"
+        },
+        {
+          "shortcutkey": "W",
+          "name": "移动工具",
+          "desc": "激活移动变换工具"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "旋转工具",
+          "desc": "激活旋转变换工具"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "缩放工具",
+          "desc": "激活缩放变换工具"
+        },
+        {
+          "shortcutkey": "T",
+          "name": "显示操纵器",
+          "desc": "显示或隐藏变换操纵器"
+        },
+        {
+          "shortcutkey": "Y",
+          "name": "上次使用的工具",
+          "desc": "切换到上次使用的工具"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "反选",
+          "desc": "反向选择当前选择集"
+        },
+        {
+          "shortcutkey": "Shift+>",
+          "name": "扩展选择",
+          "desc": "扩展选择到相邻组件"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "建模工具",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "挤出面",
+          "desc": "挤出选中的面"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+E",
+          "name": "挤出边",
+          "desc": "挤出选中的边"
+        },
+        {
+          "shortcutkey": "Ctrl+F",
+          "name": "填充洞",
+          "desc": "填充选中的边界洞"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+Right",
+          "name": "插入边循环",
+          "desc": "在选中边上插入边循环"
+        },
+        {
+          "shortcutkey": "B",
+          "name": "倒角",
+          "desc": "对选中的边或顶点执行倒角"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "桥接",
+          "desc": "在两个边循环间创建桥接"
+        },
+        {
+          "shortcutkey": "X",
+          "name": "删除组件",
+          "desc": "删除选中的组件"
+        },
+        {
+          "shortcutkey": "Shift+X",
+          "name": "删除历史",
+          "desc": "删除对象的构造历史"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "组件模式",
+      "Data": [
+        {
+          "shortcutkey": "F8",
+          "name": "对象/组件模式切换",
+          "desc": "在对象模式和组件模式间切换"
+        },
+        {
+          "shortcutkey": "F9",
+          "name": "顶点模式",
+          "desc": "切换到顶点组件模式"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "边模式",
+          "desc": "切换到边组件模式"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "面模式",
+          "desc": "切换到面组件模式"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "UV模式",
+          "desc": "切换到UV组件模式"
+        },
+        {
+          "shortcutkey": "Ctrl+F9",
+          "name": "多组件模式",
+          "desc": "启用多组件选择模式"
+        },
+        {
+          "shortcutkey": "Ctrl+Right",
+          "name": "转换选择",
+          "desc": "转换组件选择类型"
+        },
+        {
+          "shortcutkey": "Shift+>",
+          "name": "增长选择",
+          "desc": "增长当前组件选择"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "视图控制",
+      "Data": [
+        {
+          "shortcutkey": "Alt+鼠标中键",
+          "name": "平移视图",
+          "desc": "平移3D视图"
+        },
+        {
+          "shortcutkey": "Alt+鼠标右键",
+          "name": "缩放视图",
+          "desc": "缩放3D视图"
+        },
+        {
+          "shortcutkey": "Alt+鼠标左键",
+          "name": "旋转视图",
+          "desc": "旋转3D视图"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "聚焦选择",
+          "desc": "将视图聚焦到选中对象"
+        },
+        {
+          "shortcutkey": "A",
+          "name": "显示全部",
+          "desc": "显示场景中的所有对象"
+        },
+        {
+          "shortcutkey": "1",
+          "name": "正视图",
+          "desc": "切换到正交前视图"
+        },
+        {
+          "shortcutkey": "2",
+          "name": "侧视图",
+          "desc": "切换到正交侧视图"
+        },
+        {
+          "shortcutkey": "3",
+          "name": "顶视图",
+          "desc": "切换到正交顶视图"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "动画工具",
+      "Data": [
+        {
+          "shortcutkey": "S",
+          "name": "设置关键帧",
+          "desc": "为选中对象设置关键帧"
+        },
+        {
+          "shortcutkey": "Shift+S",
+          "name": "设置关键帧选项",
+          "desc": "打开设置关键帧选项窗口"
+        },
+        {
+          "shortcutkey": "Alt+V",
+          "name": "播放动画",
+          "desc": "播放或暂停时间轴动画"
+        },
+        {
+          "shortcutkey": "Alt+Shift+V",
+          "name": "播放每一帧",
+          "desc": "播放动画的每一帧"
+        },
+        {
+          "shortcutkey": "Alt+,",
+          "name": "上一帧",
+          "desc": "跳转到上一帧"
+        },
+        {
+          "shortcutkey": "Alt+.",
+          "name": "下一帧",
+          "desc": "跳转到下一帧"
+        },
+        {
+          "shortcutkey": "Alt+Shift+,",
+          "name": "上一关键帧",
+          "desc": "跳转到上一个关键帧"
+        },
+        {
+          "shortcutkey": "Alt+Shift+.",
+          "name": "下一关键帧",
+          "desc": "跳转到下一个关键帧"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "渲染和材质",
+      "Data": [
+        {
+          "shortcutkey": "F6",
+          "name": "着色模式",
+          "desc": "切换视口着色模式"
+        },
+        {
+          "shortcutkey": "5",
+          "name": "着色显示",
+          "desc": "切换到着色显示模式"
+        },
+        {
+          "shortcutkey": "6",
+          "name": "纹理显示",
+          "desc": "切换到纹理显示模式"
+        },
+        {
+          "shortcutkey": "7",
+          "name": "灯光显示",
+          "desc": "切换到灯光显示模式"
+        },
+        {
+          "shortcutkey": "Shift+M",
+          "name": "Hypershade",
+          "desc": "打开Hypershade材质编辑器"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "渲染当前帧",
+          "desc": "渲染当前时间轴帧"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+R",
+          "name": "渲染序列",
+          "desc": "渲染动画序列"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+R",
+          "name": "渲染设置",
+          "desc": "打开渲染设置窗口"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "层级和组织",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "创建组",
+          "desc": "将选中对象创建为组"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "取消组合",
+          "desc": "取消选中对象的组合"
+        },
+        {
+          "shortcutkey": "P",
+          "name": "父子关系",
+          "desc": "建立父子层级关系"
+        },
+        {
+          "shortcutkey": "Shift+P",
+          "name": "取消父子关系",
+          "desc": "取消父子层级关系"
+        },
+        {
+          "shortcutkey": "Ctrl+H",
+          "name": "隐藏选择",
+          "desc": "隐藏选中的对象"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+H",
+          "name": "显示选择",
+          "desc": "显示选中的对象"
+        },
+        {
+          "shortcutkey": "Alt+H",
+          "name": "显示全部",
+          "desc": "显示所有隐藏的对象"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "锁定选择",
+          "desc": "锁定选中的对象"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "Name": "高级工具",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制特殊",
+          "desc": "打开复制特殊选项"
+        },
+        {
+          "shortcutkey": "Shift+D",
+          "name": "复制到光标",
+          "desc": "复制对象到3D光标位置"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+D",
+          "name": "实例复制",
+          "desc": "创建对象的实例副本"
+        },
+        {
+          "shortcutkey": "Insert",
+          "name": "编辑轴心",
+          "desc": "进入轴心点编辑模式"
+        },
+        {
+          "shortcutkey": "D",
+          "name": "移动轴心",
+          "desc": "移动对象的轴心点"
+        },
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "通用工具",
+          "desc": "激活通用操作工具"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "重复上次操作",
+          "desc": "重复执行上次操作"
+        },
+        {
+          "shortcutkey": "Shift+R",
+          "name": "重复特殊",
+          "desc": "打开重复特殊操作选项"
+        }
+      ]
+    }
+  ]
+}
