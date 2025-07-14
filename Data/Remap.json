@@ -138,6 +138,14 @@
             "wpp",
             "wpp.exe"
          ]
+       },
+       {
+         "SubstanceDesigner" : [
+            "Substance 3D Designer",
+            "Substance Designer",
+            "designer.exe",
+            "sd_designer"
+         ]
        }
     ]
 }

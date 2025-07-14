@@ -1,0 +1,373 @@
+{
+  "EditTime": "2024-12-19 15:50:00",
+  "Pages": [
+    {
+      "index": 0,
+      "Name": "节点编辑",
+      "Data": [
+        {
+          "shortcutkey": "Tab",
+          "name": "添加节点",
+          "desc": "打开节点搜索面板快速添加节点"
+        },
+        {
+          "shortcutkey": "Ctrl+D",
+          "name": "复制节点",
+          "desc": "复制选中的节点"
+        },
+        {
+          "shortcutkey": "Delete",
+          "name": "删除节点",
+          "desc": "删除选中的节点"
+        },
+        {
+          "shortcutkey": "Ctrl+G",
+          "name": "创建组",
+          "desc": "将选中节点创建为组"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+G",
+          "name": "解散组",
+          "desc": "解散选中的节点组"
+        },
+        {
+          "shortcutkey": "F",
+          "name": "适应视图",
+          "desc": "将选中节点适应到视图中心"
+        },
+        {
+          "shortcutkey": "Ctrl+L",
+          "name": "对齐节点",
+          "desc": "自动对齐选中的节点"
+        },
+        {
+          "shortcutkey": "Alt+拖拽",
+          "name": "断开连接",
+          "desc": "拖拽时断开节点连接"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "Name": "材质预览",
+      "Data": [
+        {
+          "shortcutkey": "Space",
+          "name": "切换预览",
+          "desc": "在2D/3D预览间切换"
+        },
+        {
+          "shortcutkey": "1",
+          "name": "球体预览",
+          "desc": "切换到球体预览模式"
+        },
+        {
+          "shortcutkey": "2",
+          "name": "立方体预览",
+          "desc": "切换到立方体预览模式"
+        },
+        {
+          "shortcutkey": "3",
+          "name": "平面预览",
+          "desc": "切换到平面预览模式"
+        },
+        {
+          "shortcutkey": "4",
+          "name": "圆柱预览",
+          "desc": "切换到圆柱预览模式"
+        },
+        {
+          "shortcutkey": "L",
+          "name": "切换光照",
+          "desc": "开启/关闭预览光照"
+        },
+        {
+          "shortcutkey": "E",
+          "name": "环境光",
+          "desc": "切换环境光照模式"
+        },
+        {
+          "shortcutkey": "R",
+          "name": "重置视图",
+          "desc": "重置3D预览视图"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "Name": "图形编辑",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+T",
+          "name": "变换工具",
+          "desc": "激活变换工具"
+        },
+        {
+          "shortcutkey": "B",
+          "name": "画笔工具",
+          "desc": "激活画笔工具"
+        },
+        {
+          "shortcutkey": "G",
+          "name": "渐变工具",
+          "desc": "激活渐变工具"
+        },
+        {
+          "shortcutkey": "S",
+          "name": "形状工具",
+          "desc": "激活形状绘制工具"
+        },
+        {
+          "shortcutkey": "Ctrl+I",
+          "name": "反转选择",
+          "desc": "反转当前选择区域"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+I",
+          "name": "反转图像",
+          "desc": "反转图像颜色"
+        },
+        {
+          "shortcutkey": "Ctrl+R",
+          "name": "旋转图像",
+          "desc": "旋转当前图像"
+        },
+        {
+          "shortcutkey": "Ctrl+M",
+          "name": "镜像图像",
+          "desc": "镜像翻转图像"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "Name": "输出管理",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+E",
+          "name": "导出纹理",
+          "desc": "导出当前材质纹理"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+E",
+          "name": "批量导出",
+          "desc": "批量导出所有输出"
+        },
+        {
+          "shortcutkey": "F10",
+          "name": "渲染输出",
+          "desc": "渲染所有输出节点"
+        },
+        {
+          "shortcutkey": "F11",
+          "name": "渲染选中",
+          "desc": "仅渲染选中的输出"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+R",
+          "name": "重新计算",
+          "desc": "重新计算所有节点"
+        },
+        {
+          "shortcutkey": "Alt+R",
+          "name": "随机种子",
+          "desc": "生成新的随机种子"
+        },
+        {
+          "shortcutkey": "Ctrl+U",
+          "name": "更新预览",
+          "desc": "强制更新预览"
+        },
+        {
+          "shortcutkey": "Shift+F10",
+          "name": "高质量渲染",
+          "desc": "使用高质量设置渲染"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "Name": "参数控制",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+P",
+          "name": "发布参数",
+          "desc": "将属性发布为可调参数"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+P",
+          "name": "取消发布",
+          "desc": "取消参数发布"
+        },
+        {
+          "shortcutkey": "F3",
+          "name": "参数面板",
+          "desc": "显示/隐藏参数面板"
+        },
+        {
+          "shortcutkey": "Ctrl+K",
+          "name": "关键帧",
+          "desc": "为参数添加关键帧"
+        },
+        {
+          "shortcutkey": "Alt+K",
+          "name": "删除关键帧",
+          "desc": "删除选中的关键帧"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+K",
+          "name": "清除动画",
+          "desc": "清除参数的所有动画"
+        },
+        {
+          "shortcutkey": "Home",
+          "name": "重置参数",
+          "desc": "重置参数到默认值"
+        },
+        {
+          "shortcutkey": "Ctrl+Home",
+          "name": "重置所有",
+          "desc": "重置所有参数到默认值"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "Name": "视图导航",
+      "Data": [
+        {
+          "shortcutkey": "鼠标中键",
+          "name": "平移视图",
+          "desc": "拖拽平移图形视图"
+        },
+        {
+          "shortcutkey": "鼠标滚轮",
+          "name": "缩放视图",
+          "desc": "缩放图形视图"
+        },
+        {
+          "shortcutkey": "Ctrl+0",
+          "name": "适应全部",
+          "desc": "适应所有节点到视图"
+        },
+        {
+          "shortcutkey": "Ctrl+1",
+          "name": "100%缩放",
+          "desc": "设置视图为100%缩放"
+        },
+        {
+          "shortcutkey": "Ctrl+鼠标滚轮",
+          "name": "精确缩放",
+          "desc": "精确控制视图缩放"
+        },
+        {
+          "shortcutkey": "Alt+鼠标中键",
+          "name": "旋转3D视图",
+          "desc": "旋转3D预览视图"
+        },
+        {
+          "shortcutkey": "Shift+鼠标中键",
+          "name": "平移3D视图",
+          "desc": "平移3D预览视图"
+        },
+        {
+          "shortcutkey": "F5",
+          "name": "刷新视图",
+          "desc": "刷新当前视图"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "Name": "工作流程",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+N",
+          "name": "新建图形",
+          "desc": "创建新的Substance图形"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+N",
+          "name": "新建包",
+          "desc": "创建新的Substance包"
+        },
+        {
+          "shortcutkey": "Ctrl+S",
+          "name": "保存",
+          "desc": "保存当前文件"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+S",
+          "name": "另存为",
+          "desc": "将文件另存为新名称"
+        },
+        {
+          "shortcutkey": "Ctrl+O",
+          "name": "打开文件",
+          "desc": "打开Substance文件"
+        },
+        {
+          "shortcutkey": "Ctrl+W",
+          "name": "关闭文档",
+          "desc": "关闭当前文档"
+        },
+        {
+          "shortcutkey": "Ctrl+Tab",
+          "name": "切换文档",
+          "desc": "在打开的文档间切换"
+        },
+        {
+          "shortcutkey": "F12",
+          "name": "发布到库",
+          "desc": "将材质发布到资源库"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "Name": "高级功能",
+      "Data": [
+        {
+          "shortcutkey": "Ctrl+J",
+          "name": "连接节点",
+          "desc": "智能连接选中的节点"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+J",
+          "name": "断开所有",
+          "desc": "断开节点的所有连接"
+        },
+        {
+          "shortcutkey": "Ctrl+B",
+          "name": "烘焙节点",
+          "desc": "将程序化节点烘焙为位图"
+        },
+        {
+          "shortcutkey": "Ctrl+Shift+B",
+          "name": "批量烘焙",
+          "desc": "批量烘焙选中的节点"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+C",
+          "name": "转换为组合",
+          "desc": "将节点转换为组合节点"
+        },
+        {
+          "shortcutkey": "Ctrl+Alt+F",
+          "name": "创建函数",
+          "desc": "从选中节点创建函数"
+        },
+        {
+          "shortcutkey": "F8",
+          "name": "性能分析",
+          "desc": "显示节点性能分析"
+        },
+        {
+          "shortcutkey": "Ctrl+F8",
+          "name": "内存使用",
+          "desc": "显示内存使用情况"
+        }
+      ]
+    }
+  ]
+}
