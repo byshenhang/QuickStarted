@@ -154,16 +154,28 @@ namespace QuickStarted.Views
 
             VideoPlayer.Volume = Volume;
 
-            // —— 预热开始（静音+极短播放）——
-            double keepVolume = VideoPlayer.Volume;
-            VideoPlayer.Volume = 0;              // 防止短促的出声
-            VideoPlayer.Position = TimeSpan.FromMilliseconds(1); // 踢到首关键帧附近，避免0帧卡顿
-            VideoPlayer.Play();
-            await System.Threading.Tasks.Task.Delay(120); // 100~200ms 视情况调整
-            VideoPlayer.Pause();
-            VideoPlayer.Position = TimeSpan.Zero; // 复位到 0
-            VideoPlayer.Volume = keepVolume;
-            // —— 预热结束 ——
+            // 对于短视频（小于5秒）跳过预热，避免播放错误
+            if (TotalSeconds >= 5.0)
+            {
+                // —— 预热开始（静音+极短播放）——
+                double keepVolume = VideoPlayer.Volume;
+                VideoPlayer.Volume = 0;              // 防止短促的出声
+                VideoPlayer.Position = TimeSpan.FromMilliseconds(1); // 踢到首关键帧附近，避免0帧卡顿
+                VideoPlayer.Play();
+                await System.Threading.Tasks.Task.Delay(120); // 100~200ms 视情况调整
+                VideoPlayer.Pause();
+                VideoPlayer.Position = TimeSpan.Zero; // 复位到 0
+                VideoPlayer.Volume = keepVolume;
+                // —— 预热结束 ——
+                
+                _logService?.LogInfo($"视频预热完成，时长: {TotalSeconds:F1}秒");
+            }
+            else
+            {
+                // 短视频直接设置到开始位置，不进行预热
+                VideoPlayer.Position = TimeSpan.Zero;
+                _logService?.LogInfo($"短视频跳过预热，时长: {TotalSeconds:F1}秒");
+            }
 
             IsPlaying = false;   // 保持“未播放”状态
             _timer.Stop();       // 直到用户点击才启动计时器
