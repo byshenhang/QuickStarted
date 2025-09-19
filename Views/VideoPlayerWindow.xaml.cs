@@ -156,6 +156,10 @@ namespace QuickStarted.Views
             VideoPlayer.Volume = Volume;
             _logService?.LogInfo($"设置音量: {Volume}");
             
+            // 强制刷新显示第一帧
+            VideoPlayer.Position = TimeSpan.FromMilliseconds(1);
+            VideoPlayer.Position = TimeSpan.Zero;
+            
             VideoPlayer.Play();
             IsPlaying = true;
             _timer.Start();
