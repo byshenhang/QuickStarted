@@ -67,6 +67,12 @@ namespace QuickStarted.ViewModels
         private bool _isShortcutKeysVisible = true;
 
         [ObservableProperty]
+        private bool _isNotesVisible = false;
+
+        [ObservableProperty]
+        private bool _isVideosVisible = false;
+
+        [ObservableProperty]
         private string _currentHookWindowTitle = string.Empty;
 
         [ObservableProperty]
@@ -462,6 +468,8 @@ $Box01.pos.x * 2
         private void ShowShortcutKeys()
         {
             IsShortcutKeysVisible = true;
+            IsNotesVisible = false;
+            IsVideosVisible = false;
         }
 
         /// <summary>
@@ -471,6 +479,19 @@ $Box01.pos.x * 2
         private void ShowNotes()
         {
             IsShortcutKeysVisible = false;
+            IsNotesVisible = true;
+            IsVideosVisible = false;
+        }
+
+        /// <summary>
+        /// 切换到视频视图
+        /// </summary>
+        [RelayCommand]
+        private void ShowVideos()
+        {
+            IsShortcutKeysVisible = false;
+            IsNotesVisible = false;
+            IsVideosVisible = true;
         }
 
         /// <summary>

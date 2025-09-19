@@ -226,6 +226,10 @@
                         Command="{Binding ShowNotesCommand}"
                         Content="笔记"
                         Style="{StaticResource TabButtonStyle}" />
+                    <Button
+                        Command="{Binding ShowVideosCommand}"
+                        Content="视频"
+                        Style="{StaticResource TabButtonStyle}" />
                 </StackPanel>
 
 
@@ -585,7 +589,7 @@
                     </StackPanel>
 
                     <!--  笔记视图  -->
-                    <Grid Visibility="{Binding IsShortcutKeysVisible, Converter={StaticResource InverseBooleanToVisibilityConverter}}">
+                    <Grid Visibility="{Binding IsNotesVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200" />
                             <ColumnDefinition Width="200" />
@@ -726,6 +730,60 @@
                             </ScrollViewer>
                         </Border>
                     </Grid>
+
+                    <!--  视频视图  -->
+                    <Grid Visibility="{Binding IsVideosVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <Border
+                            Margin="20"
+                            BorderBrush="#664FC3F7"
+                            BorderThickness="1"
+                            CornerRadius="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+
+                                <!--  视频页面标题  -->
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Margin="20,20,20,10"
+                                    FontSize="24"
+                                    FontWeight="Bold"
+                                    Foreground="White"
+                                    HorizontalAlignment="Center"
+                                    Text="视频教程" />
+
+                                <!--  视频内容区域  -->
+                                <ScrollViewer Grid.Row="1" Padding="20">
+                                    <StackPanel>
+                                        <TextBlock
+                                            FontSize="16"
+                                            Foreground="#CCCCCC"
+                                            HorizontalAlignment="Center"
+                                            Text="视频内容即将推出..."
+                                            TextAlignment="Center" />
+                                        
+                                        <!--  占位内容  -->
+                                        <Border
+                                            Margin="0,20,0,0"
+                                            Height="200"
+                                            Background="#33FFFFFF"
+                                            CornerRadius="5">
+                                            <TextBlock
+                                                FontSize="14"
+                                                Foreground="#AAAAAA"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Text="这里将显示视频列表和播放器" />
+                                        </Border>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+                    
                 </Grid>
             </Grid>
         </Border>
