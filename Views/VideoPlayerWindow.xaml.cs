@@ -299,6 +299,37 @@ namespace QuickStarted.Views
             _logService?.LogInfo("视频播放器已关闭，VideoPlayerWindow关闭完成");
         }
 
+        // 标题栏拖拽事件
+        private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ButtonState == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        // 全屏按钮点击事件
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Normal)
+            {
+                this.WindowState = WindowState.Maximized;
+                _logService?.LogInfo("窗口已最大化");
+            }
+            else
+            {
+                this.WindowState = WindowState.Normal;
+                _logService?.LogInfo("窗口已还原");
+            }
+        }
+
+        // 关闭按钮点击事件
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            _logService?.LogInfo("用户点击关闭按钮");
+            this.Close();
+        }
+
         #endregion
 
         #region INotifyPropertyChanged

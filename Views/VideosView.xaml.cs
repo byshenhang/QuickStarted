@@ -3,6 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using QuickStarted.Models;
 using QuickStarted.ViewModels;
+using Application = System.Windows.Application;
 
 namespace QuickStarted.Views
 {
@@ -24,5 +25,6 @@ namespace QuickStarted.Views
                 viewModel?.PlayVideoCommand?.Execute(video);
             }
         }
+
     }
 }

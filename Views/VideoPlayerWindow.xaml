@@ -9,8 +9,11 @@
     Height="600"
     MinWidth="600"
     MinHeight="400"
-    Background="#FF1E1E1E"
+    Background="Transparent"
     WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    AllowsTransparency="True"
+    ResizeMode="CanResizeWithGrip"
     mc:Ignorable="d">
 
     <Window.Resources>
@@ -57,17 +60,122 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
+    <!-- 主容器边框 -->
+    <Border Background="#FF1E1E1E" CornerRadius="8" BorderBrush="#664FC3F7" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-        <!--  视频播放区域  -->
-        <Border
-            Grid.Row="0"
-            Margin="10,10,10,5"
-            Background="Black">
+            <!-- 自定义标题栏 -->
+            <Grid Grid.Row="0" Background="#22FFFFFF" Height="35" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- 应用图标 -->
+                <TextBlock Grid.Column="0" 
+                           Text="🎬" 
+                           FontSize="14" 
+                           Foreground="White" 
+                           VerticalAlignment="Center" 
+                           Margin="10,0,8,0"/>
+                
+                <!-- 标题 -->
+                <TextBlock Grid.Column="1"
+                           Text="{Binding VideoTitle}"
+                           FontSize="12"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           TextTrimming="CharacterEllipsis"/>
+                
+                <!-- 全屏按钮 -->
+                <Button Grid.Column="2"
+                        Name="MaximizeButton"
+                        Width="28" Height="28"
+                        Margin="2,0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Foreground="White"
+                        ToolTip="全屏"
+                        Click="MaximizeButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                                CornerRadius="3">
+                                            <ContentPresenter HorizontalAlignment="Center" 
+                                                            VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#44FFFFFF"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="Background" Value="#66FFFFFF"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                    <TextBlock Text="⛶" FontSize="10"/>
+                </Button>
+                
+                <!-- 关闭按钮 -->
+                <Button Grid.Column="3"
+                        Name="CloseButton"
+                        Width="28" Height="28"
+                        Margin="2,0,8,0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Foreground="White"
+                        ToolTip="关闭"
+                        Click="CloseButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                                CornerRadius="3">
+                                            <ContentPresenter HorizontalAlignment="Center" 
+                                                            VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#E81123"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="Background" Value="#F1707A"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                    <TextBlock Text="✕" FontSize="10"/>
+                </Button>
+            </Grid>
+
+            <!--  视频播放区域  -->
+            <Border
+                Grid.Row="1"
+                Margin="10,5,10,5"
+                Background="Black"
+                CornerRadius="4">
             <Grid>
                 <!--  MediaElement 视频播放器  -->
                 <MediaElement
@@ -119,7 +227,7 @@
 
         <!--  控制面板  -->
         <Border
-            Grid.Row="1"
+            Grid.Row="2"
             Margin="10,0,10,10"
             Padding="15,10"
             Background="#FF2D2D2D">
@@ -220,5 +328,6 @@
                 </StackPanel>
             </Grid>
         </Border>
-    </Grid>
+        </Grid>
+    </Border>
 </Window>
