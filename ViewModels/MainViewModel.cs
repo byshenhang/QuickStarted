@@ -30,7 +30,7 @@ namespace QuickStarted.ViewModels
         /// </summary>
         public ShortcutKeysViewModel ShortcutKeysVM { get; } = new();
         public NotesViewModel NotesVM { get; } = new();
-        public VideosViewModel VideosVM { get; } = new();
+        public VideosViewModel VideosVM { get; }
 
         [ObservableProperty]
         private string _currentProgram = string.Empty;
@@ -93,6 +93,9 @@ namespace QuickStarted.ViewModels
             _dataService = dataService;
             _logService = logService;
             _mouseHookService = new MouseHookService();
+            
+            // 初始化VideosViewModel，传入依赖服务
+            VideosVM = new VideosViewModel(dataService, logService);
             
             // 订阅鼠标滚轮事件
             _mouseHookService.MouseWheel += OnMouseWheel;
@@ -279,12 +282,17 @@ namespace QuickStarted.ViewModels
                     // 更新笔记分类（内部默认选择第一类与其第一个文件）
                     NotesVM.SetCategories(programNotes.NoteCategories);
                     _log_service_loginfo_safe($"已添加 {programNotes.NoteCategories.Count} 个笔记分类到笔记视图");
+
+                    // 更新视频数据
+                    await VideosVM.LoadVideosAsync(matchedProgram);
+                    _log_service_loginfo_safe($"已加载程序 '{matchedProgram}' 的视频数据");
                 }
                 else
                 {
                     _log_service_logerror_safe($"无法加载程序 '{matchedProgram}' 的笔记数据");
                     ShortcutKeysVM.SetPages(Array.Empty<ShortcutKeyPage>());
                     NotesVM.SetCategories(Array.Empty<NoteCategory>());
+                    VideosVM.ClearVideos();
                 }
                 
                 _log_service_loginfo_safe("程序数据加载完成");

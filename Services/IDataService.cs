@@ -34,5 +34,18 @@ namespace QuickStarted.Services
         /// </summary>
         /// <returns>程序名称列表</returns>
         Task<List<string>> GetAvailableProgramsAsync();
+
+        /// <summary>
+        /// 加载指定程序的视频信息
+        /// </summary>
+        /// <param name="programName">程序名称</param>
+        /// <returns>视频信息列表</returns>
+        Task<List<VideoInfo>> LoadProgramVideosAsync(string programName);
+
+        /// <summary>
+        /// 获取所有可用的视频程序列表
+        /// </summary>
+        /// <returns>有视频的程序名称列表</returns>
+        Task<List<string>> GetAvailableVideoProgramsAsync();
     }
 }

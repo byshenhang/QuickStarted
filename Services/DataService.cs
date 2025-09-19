@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -247,6 +248,134 @@ namespace QuickStarted.Services
         }
 
         /// <summary>
+        /// 加载指定程序的视频信息
+        /// </summary>
+        /// <param name="programName">程序名称</param>
+        /// <returns>视频信息列表</returns>
+        public async Task<List<VideoInfo>> LoadProgramVideosAsync(string programName)
+        {
+            _logService.LogInfo($"开始加载程序视频数据: '{programName}'");
+            
+            var videos = new List<VideoInfo>();
+            
+            try
+            {
+                // 首先通过Remap.json查找程序的映射名称
+                var mappedProgramName = await GetMappedProgramNameAsync(programName);
+                if (string.IsNullOrEmpty(mappedProgramName))
+                {
+                    _logService.LogWarning($"在Remap.json中未找到程序 '{programName}' 的映射配置");
+                    return videos;
+                }
+
+                var videoDataPath = Path.Combine(_dataPath, "VideoData", mappedProgramName);
+                _logService.LogInfo($"视频数据路径: {videoDataPath} (映射程序名: {mappedProgramName})");
+                
+                if (!Directory.Exists(videoDataPath))
+                {
+                    _logService.LogWarning($"视频数据目录不存在: {videoDataPath}");
+                    return videos;
+                }
+
+                // 获取所有MP4文件
+                var videoFiles = Directory.GetFiles(videoDataPath, "*.mp4", SearchOption.TopDirectoryOnly);
+                _logService.LogInfo($"找到 {videoFiles.Length} 个视频文件");
+                
+                foreach (var videoFile in videoFiles)
+                {
+                    try
+                    {
+                        var fileInfo = new FileInfo(videoFile);
+                        var fileName = Path.GetFileNameWithoutExtension(videoFile);
+                        
+                        var video = new VideoInfo
+                        {
+                            Name = fileName,
+                            FilePath = videoFile,
+                            FileSize = fileInfo.Length,
+                            CreatedTime = fileInfo.CreationTime,
+                            ModifiedTime = fileInfo.LastWriteTime
+                        };
+
+                        // 查找对应的预览图（支持jpg、png、jpeg）
+                        var thumbnailExtensions = new[] { ".jpg", ".png", ".jpeg" };
+                        foreach (var ext in thumbnailExtensions)
+                        {
+                            var thumbnailPath = Path.Combine(videoDataPath, fileName + ext);
+                            if (File.Exists(thumbnailPath))
+                            {
+                                video.ThumbnailPath = thumbnailPath;
+                                break;
+                            }
+                        }
+
+                        // 尝试读取描述文件（如果存在）
+                        var descriptionPath = Path.Combine(videoDataPath, fileName + ".txt");
+                        if (File.Exists(descriptionPath))
+                        {
+                            video.Description = await File.ReadAllTextAsync(descriptionPath);
+                        }
+
+                        videos.Add(video);
+                        _logService.LogDebug($"加载视频: {fileName}, 大小: {video.FormattedFileSize}");
+                    }
+                    catch (Exception ex)
+                    {
+                        _logService.LogError($"加载视频文件失败 '{videoFile}': {ex.Message}", ex);
+                    }
+                }
+
+                // 按修改时间降序排序（最新的在前面）
+                videos = videos.OrderByDescending(v => v.ModifiedTime).ToList();
+                
+                _logService.LogInfo($"程序 '{programName}' 视频数据加载完成，共 {videos.Count} 个视频");
+                return videos;
+            }
+            catch (Exception ex)
+            {
+                _logService.LogError($"加载程序视频失败: {ex.Message}", ex);
+                return videos;
+            }
+        }
+
+        /// <summary>
+        /// 获取所有可用的视频程序列表
+        /// </summary>
+        /// <returns>有视频的程序名称列表</returns>
+        public async Task<List<string>> GetAvailableVideoProgramsAsync()
+        {
+            try
+            {
+                var videoDataPath = Path.Combine(_dataPath, "VideoData");
+                if (!Directory.Exists(videoDataPath))
+                {
+                    _logService.LogWarning($"VideoData目录不存在: {videoDataPath}");
+                    return new List<string>();
+                }
+
+                var directories = Directory.GetDirectories(videoDataPath)
+                    .Select(Path.GetFileName)
+                    .Where(name => !string.IsNullOrEmpty(name))
+                    .Cast<string>()
+                    .Where(programName => 
+                    {
+                        // 检查目录中是否有MP4文件
+                        var programPath = Path.Combine(videoDataPath, programName);
+                        return Directory.GetFiles(programPath, "*.mp4", SearchOption.TopDirectoryOnly).Length > 0;
+                    })
+                    .ToList();
+
+                _logService.LogInfo($"找到 {directories.Count} 个有视频的程序");
+                return directories;
+            }
+            catch (Exception ex)
+            {
+                _logService.LogError($"获取可用视频程序列表失败: {ex.Message}", ex);
+                return new List<string>();
+            }
+        }
+
+        /// <summary>
         /// 获取所有可用的程序列表
         /// </summary>
         /// <returns>程序名称列表</returns>
@@ -268,9 +397,74 @@ namespace QuickStarted.Services
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"获取可用程序列表失败: {ex.Message}");
+                _logService.LogError($"获取可用程序列表失败: {ex.Message}", ex);
                 return new List<string>();
             }
         }
+
+        /// <summary>
+        /// 通过Remap.json查找程序的映射名称
+        /// </summary>
+        /// <param name="programName">程序名称</param>
+        /// <returns>映射的程序名称，如果未找到则返回null</returns>
+        private async Task<string?> GetMappedProgramNameAsync(string programName)
+        {
+            try
+            {
+                var remapPath = Path.Combine(_dataPath, "Remap.json");
+                if (!File.Exists(remapPath))
+                {
+                    _logService.LogWarning($"Remap.json文件不存在: {remapPath}");
+                    return null;
+                }
+
+                var jsonContent = await File.ReadAllTextAsync(remapPath);
+                var remapData = JsonSerializer.Deserialize<RemapData>(jsonContent);
+
+                if (remapData?.MapData == null)
+                {
+                    _logService.LogWarning("Remap.json格式错误或MapData为空");
+                    return null;
+                }
+
+                // 在MapData中查找匹配的程序名称
+                foreach (var mapItem in remapData.MapData)
+                {
+                    foreach (var property in mapItem.GetType().GetProperties())
+                    {
+                        if (property.PropertyType == typeof(string[]))
+                        {
+                            var mappedName = property.Name;
+                            var aliases = property.GetValue(mapItem) as string[];
+                            
+                            if (aliases != null && aliases.Any(alias => 
+                                string.Equals(alias, programName, StringComparison.OrdinalIgnoreCase) ||
+                                string.Equals(alias, Path.GetFileNameWithoutExtension(programName), StringComparison.OrdinalIgnoreCase)))
+                            {
+                                _logService.LogInfo($"找到程序映射: '{programName}' -> '{mappedName}'");
+                                return mappedName;
+                            }
+                        }
+                    }
+                }
+
+                _logService.LogWarning($"未找到程序 '{programName}' 的映射配置");
+                return null;
+            }
+            catch (Exception ex)
+            {
+                _logService.LogError($"查找程序映射失败: {ex.Message}", ex);
+                return null;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Remap.json数据结构
+    /// </summary>
+    public class RemapData
+    {
+        public string? EditTime { get; set; }
+        public List<Dictionary<string, string[]>>? MapData { get; set; }
     }
 }
