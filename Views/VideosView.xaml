@@ -13,6 +13,7 @@
         <converters:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
         <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
         <converters:InverseStringToVisibilityConverter x:Key="InverseStringToVisibilityConverter"/>
+        <converters:NullToImageSourceConverter x:Key="NullToImageSourceConverter"/>
         
         <!-- 视频卡片样式 -->
         <Style x:Key="VideoCardStyle" TargetType="Border">
@@ -182,7 +183,7 @@
                                             Margin="2">
                                         <Grid>
                                             <!-- 预览图 -->
-                                            <Image Source="{Binding ThumbnailPath}"
+                                            <Image Source="{Binding ThumbnailPath, Converter={StaticResource NullToImageSourceConverter}}"
                                                    Stretch="UniformToFill"
                                                    Visibility="{Binding ThumbnailPath, Converter={StaticResource StringToVisibilityConverter}}"/>
                                             

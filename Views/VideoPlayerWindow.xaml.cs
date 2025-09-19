@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Threading;
 using QuickStarted.Models;
+using QuickStarted.Services;
 
 namespace QuickStarted.Views
 {
@@ -18,17 +19,29 @@ namespace QuickStarted.Views
         private readonly DispatcherTimer _timer;
         private bool _isUserDragging = false;
         private VideoInfo _videoInfo;
+        private readonly ILogService? _logService;
 
-        public VideoPlayerWindow(VideoInfo videoInfo)
+        public VideoPlayerWindow(VideoInfo videoInfo, ILogService? logService = null)
         {
+            _logService = logService;
+            _logService?.LogInfo($"开始初始化VideoPlayerWindow，视频: {videoInfo?.Name}");
+            
             InitializeComponent();
             DataContext = this;
             
             _videoInfo = videoInfo;
             VideoTitle = $"视频播放器 - {videoInfo.Name}";
+            
+            _logService?.LogInfo($"设置视频源: {videoInfo.FilePath}");
             VideoSource = new Uri(videoInfo.FilePath);
             Volume = 0.5;
             IsLoading = true;
+            
+            // 设置窗口置顶
+            Topmost = true;
+            _logService?.LogInfo("设置窗口置顶");
+            
+            _logService?.LogInfo("VideoPlayerWindow初始化完成，IsLoading设置为true");
 
             // 初始化定时器用于更新进度
             _timer = new DispatcherTimer
@@ -36,9 +49,11 @@ namespace QuickStarted.Views
                 Interval = TimeSpan.FromMilliseconds(500)
             };
             _timer.Tick += Timer_Tick;
+            _logService?.LogInfo("定时器初始化完成");
 
             // 设置窗口关闭事件
             Closing += VideoPlayerWindow_Closing;
+            _logService?.LogInfo("VideoPlayerWindow构造函数执行完成");
         }
 
         #region 属性
@@ -121,35 +136,54 @@ namespace QuickStarted.Views
 
         private void VideoPlayer_MediaOpened(object sender, RoutedEventArgs e)
         {
+            _logService?.LogInfo("VideoPlayer_MediaOpened事件触发");
+            
             IsLoading = false;
             HasError = false;
+            _logService?.LogInfo("设置IsLoading=false, HasError=false");
             
             if (VideoPlayer.NaturalDuration.HasTimeSpan)
             {
                 TotalSeconds = VideoPlayer.NaturalDuration.TimeSpan.TotalSeconds;
                 OnPropertyChanged(nameof(TotalTimeText));
+                _logService?.LogInfo($"视频总时长: {TotalSeconds}秒");
+            }
+            else
+            {
+                _logService?.LogWarning("无法获取视频总时长");
             }
 
             VideoPlayer.Volume = Volume;
+            _logService?.LogInfo($"设置音量: {Volume}");
+            
             VideoPlayer.Play();
             IsPlaying = true;
             _timer.Start();
+            _logService?.LogInfo("开始播放视频，定时器已启动");
         }
 
         private void VideoPlayer_MediaEnded(object sender, RoutedEventArgs e)
         {
+            _logService?.LogInfo("VideoPlayer_MediaEnded事件触发，视频播放结束");
+            
             IsPlaying = false;
             _timer.Stop();
             CurrentSeconds = 0;
             VideoPlayer.Position = TimeSpan.Zero;
+            
+            _logService?.LogInfo("视频播放结束，已重置播放状态");
         }
 
         private void VideoPlayer_MediaFailed(object sender, ExceptionRoutedEventArgs e)
         {
+            _logService?.LogError($"VideoPlayer_MediaFailed事件触发: {e.ErrorException?.Message ?? "未知错误"}", e.ErrorException);
+            
             IsLoading = false;
             HasError = true;
             ErrorMessage = $"视频加载失败: {e.ErrorException?.Message ?? "未知错误"}";
             _timer.Stop();
+            
+            _logService?.LogError($"视频加载失败，错误信息: {ErrorMessage}");
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -158,21 +192,33 @@ namespace QuickStarted.Views
             {
                 CurrentSeconds = VideoPlayer.Position.TotalSeconds;
                 OnPropertyChanged(nameof(CurrentTimeText));
+                
+                // 每10秒记录一次播放进度
+                if ((int)CurrentSeconds % 10 == 0)
+                {
+                    _logService?.LogInfo($"视频播放进度: {CurrentSeconds:F1}/{TotalSeconds:F1}秒");
+                }
             }
         }
 
         private void PlayPause_Click(object sender, RoutedEventArgs e)
         {
-            if (HasError) return;
+            if (HasError) 
+            {
+                _logService?.LogWarning("播放/暂停按钮点击，但视频有错误，忽略操作");
+                return;
+            }
 
             if (IsPlaying)
             {
+                _logService?.LogInfo("暂停视频播放");
                 VideoPlayer.Pause();
                 IsPlaying = false;
                 _timer.Stop();
             }
             else
             {
+                _logService?.LogInfo("恢复视频播放");
                 VideoPlayer.Play();
                 IsPlaying = true;
                 _timer.Start();
@@ -181,6 +227,7 @@ namespace QuickStarted.Views
 
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
+            _logService?.LogInfo("停止视频播放");
             VideoPlayer.Stop();
             IsPlaying = false;
             _timer.Stop();
@@ -240,9 +287,16 @@ namespace QuickStarted.Views
 
         private void VideoPlayerWindow_Closing(object sender, CancelEventArgs e)
         {
+            _logService?.LogInfo("VideoPlayerWindow正在关闭");
+            
             _timer?.Stop();
+            _logService?.LogInfo("定时器已停止");
+            
             VideoPlayer?.Stop();
+            _logService?.LogInfo("视频播放器已停止");
+            
             VideoPlayer?.Close();
+            _logService?.LogInfo("视频播放器已关闭，VideoPlayerWindow关闭完成");
         }
 
         #endregion

@@ -141,20 +141,38 @@ namespace QuickStarted.ViewModels
         {
             try
             {
-                if (video == null || !File.Exists(video.FilePath))
+                _logService?.LogInfo($"开始播放视频: {video?.Name ?? "null"}");
+                
+                if (video == null)
                 {
+                    _logService?.LogError("视频对象为空");
+                    StatusMessage = "视频对象为空";
+                    return;
+                }
+                
+                _logService?.LogInfo($"检查视频文件路径: {video.FilePath}");
+                
+                if (!File.Exists(video.FilePath))
+                {
+                    _logService?.LogError($"视频文件不存在: {video.FilePath}");
                     StatusMessage = "视频文件不存在";
                     return;
                 }
+                
+                _logService?.LogInfo($"视频文件存在，开始创建播放窗口");
 
                 // 创建并显示视频播放窗口
-                var playerWindow = new VideoPlayerWindow(video);
+                var playerWindow = new VideoPlayerWindow(video, _logService);
+                _logService?.LogInfo($"视频播放窗口已创建，准备显示");
+                
                 playerWindow.Show();
+                _logService?.LogInfo($"视频播放窗口已显示");
 
                 StatusMessage = $"正在播放: {video.Name}";
             }
             catch (Exception ex)
             {
+                _logService?.LogError($"播放视频失败: {ex.Message}", ex);
                 StatusMessage = $"播放视频失败: {ex.Message}";
             }
         }

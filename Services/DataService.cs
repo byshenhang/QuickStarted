@@ -260,16 +260,15 @@ namespace QuickStarted.Services
             
             try
             {
-                // 首先通过Remap.json查找程序的映射名称
-                var mappedProgramName = await GetMappedProgramNameAsync(programName);
-                if (string.IsNullOrEmpty(mappedProgramName))
+                // 直接使用传入的程序名称，因为它已经是通过GetMatchingProgram方法匹配后的结果
+                if (string.IsNullOrEmpty(programName))
                 {
-                    _logService.LogWarning($"在Remap.json中未找到程序 '{programName}' 的映射配置");
+                    _logService.LogWarning("程序名称为空，无法加载视频数据");
                     return videos;
                 }
 
-                var videoDataPath = Path.Combine(_dataPath, "VideoData", mappedProgramName);
-                _logService.LogInfo($"视频数据路径: {videoDataPath} (映射程序名: {mappedProgramName})");
+                var videoDataPath = Path.Combine(_dataPath, "VideoData", programName);
+                _logService.LogInfo($"视频数据路径: {videoDataPath}");
                 
                 if (!Directory.Exists(videoDataPath))
                 {
@@ -402,69 +401,5 @@ namespace QuickStarted.Services
             }
         }
 
-        /// <summary>
-        /// 通过Remap.json查找程序的映射名称
-        /// </summary>
-        /// <param name="programName">程序名称</param>
-        /// <returns>映射的程序名称，如果未找到则返回null</returns>
-        private async Task<string?> GetMappedProgramNameAsync(string programName)
-        {
-            try
-            {
-                var remapPath = Path.Combine(_dataPath, "Remap.json");
-                if (!File.Exists(remapPath))
-                {
-                    _logService.LogWarning($"Remap.json文件不存在: {remapPath}");
-                    return null;
-                }
-
-                var jsonContent = await File.ReadAllTextAsync(remapPath);
-                var remapData = JsonSerializer.Deserialize<RemapData>(jsonContent);
-
-                if (remapData?.MapData == null)
-                {
-                    _logService.LogWarning("Remap.json格式错误或MapData为空");
-                    return null;
-                }
-
-                // 在MapData中查找匹配的程序名称
-                foreach (var mapItem in remapData.MapData)
-                {
-                    foreach (var property in mapItem.GetType().GetProperties())
-                    {
-                        if (property.PropertyType == typeof(string[]))
-                        {
-                            var mappedName = property.Name;
-                            var aliases = property.GetValue(mapItem) as string[];
-                            
-                            if (aliases != null && aliases.Any(alias => 
-                                string.Equals(alias, programName, StringComparison.OrdinalIgnoreCase) ||
-                                string.Equals(alias, Path.GetFileNameWithoutExtension(programName), StringComparison.OrdinalIgnoreCase)))
-                            {
-                                _logService.LogInfo($"找到程序映射: '{programName}' -> '{mappedName}'");
-                                return mappedName;
-                            }
-                        }
-                    }
-                }
-
-                _logService.LogWarning($"未找到程序 '{programName}' 的映射配置");
-                return null;
-            }
-            catch (Exception ex)
-            {
-                _logService.LogError($"查找程序映射失败: {ex.Message}", ex);
-                return null;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Remap.json数据结构
-    /// </summary>
-    public class RemapData
-    {
-        public string? EditTime { get; set; }
-        public List<Dictionary<string, string[]>>? MapData { get; set; }
     }
 }
