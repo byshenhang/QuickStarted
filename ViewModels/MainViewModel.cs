@@ -55,6 +55,16 @@ namespace QuickStarted.ViewModels
         private bool _isPageTabsVisible = true;
 
         /// <summary>
+        /// 数据是否已加载标志位
+        /// </summary>
+        private bool _isDataLoaded = false;
+
+        /// <summary>
+        /// 上次加载数据的程序名称
+        /// </summary>
+        private string _lastLoadedProgram = string.Empty;
+
+        /// <summary>
         /// 构造函数
         /// </summary>
         public MainViewModel(IWindowHookService windowHookService, IScreenService screenService, IDataService dataService, ILogService logService)
@@ -112,9 +122,48 @@ namespace QuickStarted.ViewModels
         {
             await System.Windows.Application.Current.Dispatcher.InvokeAsync(async () =>
             {
-                await LoadCurrentProgramDataAsync();
+                // 获取当前程序名称
+                var currentProgram = await GetCurrentProgramNameAsync();
+
+                // 只在第一次打开或程序切换时加载数据
+                if (!_isDataLoaded || _lastLoadedProgram != currentProgram)
+                {
+                    await LoadCurrentProgramDataAsync();
+                    _isDataLoaded = true;
+                    _lastLoadedProgram = currentProgram;
+                }
                 ShowWindowWithFadeIn();
             });
+        }
+
+        /// <summary>
+        /// 获取当前程序名称
+        /// </summary>
+        private async Task<string> GetCurrentProgramNameAsync()
+        {
+            try
+            {
+                // 确保程序映射配置已加载
+                await _dataService.LoadProgramMappingAsync();
+                
+                // 获取当前活动窗口的进程名称
+                var processName = GetActiveWindowTitle();
+                
+                // 根据进程名称匹配程序
+                var matchedProgram = _dataService.GetMatchingProgram(processName);
+                
+                if (string.IsNullOrEmpty(matchedProgram))
+                {
+                    matchedProgram = "3dMax"; // 默认程序
+                }
+                
+                return matchedProgram;
+            }
+            catch (Exception ex)
+            {
+                _logService.LogError($"获取当前程序名称失败: {ex.Message}", ex);
+                return "3dMax"; // 返回默认程序
+            }
         }
 
         /// <summary>
