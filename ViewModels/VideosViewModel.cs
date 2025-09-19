@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace QuickStarted.ViewModels
 {
@@ -71,6 +72,9 @@ namespace QuickStarted.ViewModels
         {
             _dataService = dataService;
             _logService = logService;
+            
+            // 初始化命令
+            RefreshThumbnailCommand = new RelayCommand<object>(RefreshThumbnail);
         }
 
         /// <summary>
@@ -199,6 +203,47 @@ namespace QuickStarted.ViewModels
             HasVideos = false;
             CurrentProgram = string.Empty;
             StatusMessage = "请选择一个程序查看视频教程";
+        }
+
+        /// <summary>
+        /// 刷新缩略图命令
+        /// </summary>
+        public ICommand RefreshThumbnailCommand { get; private set; } = null!;
+
+        /// <summary>
+        /// 刷新指定视频的缩略图
+        /// </summary>
+        /// <param name="video">视频信息</param>
+        private async void RefreshThumbnail(object? parameter)
+        {
+            if (parameter is not VideoInfo video || _dataService == null)
+                return;
+
+            try
+            {
+                IsLoading = true;
+                StatusMessage = $"正在为 '{video.Name}' 重新生成预览图...";
+                
+                // 删除现有的缩略图文件
+                if (!string.IsNullOrEmpty(video.ThumbnailPath) && File.Exists(video.ThumbnailPath))
+                {
+                    File.Delete(video.ThumbnailPath);
+                }
+
+                // 重新加载当前程序的视频（这会触发缩略图生成）
+                await LoadVideosAsync(CurrentProgram);
+                
+                StatusMessage = $"预览图刷新完成";
+            }
+            catch (Exception ex)
+            {
+                _logService?.LogError($"刷新缩略图失败: {ex.Message}", ex);
+                StatusMessage = $"刷新预览图失败: {ex.Message}";
+            }
+            finally
+            {
+                IsLoading = false;
+            }
         }
 
         /// <summary>

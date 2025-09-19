@@ -16,15 +16,18 @@ namespace QuickStarted.Services
     {
         private readonly string _dataPath;
         private readonly ILogService _logService;
+        private readonly IThumbnailService _thumbnailService;
         private ProgramMapping? _cachedMapping;
 
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="logService">日志服务</param>
-        public DataService(ILogService logService)
+        /// <param name="thumbnailService">缩略图服务</param>
+        public DataService(ILogService logService, IThumbnailService thumbnailService)
         {
             _logService = logService;
+            _thumbnailService = thumbnailService;
             _dataPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
             _logService.LogInfo($"DataService初始化，数据路径: {_dataPath}");
         }
@@ -305,6 +308,24 @@ namespace QuickStarted.Services
                             {
                                 video.ThumbnailPath = thumbnailPath;
                                 break;
+                            }
+                        }
+
+                        // 如果没有找到预览图，尝试生成一个
+                        if (string.IsNullOrEmpty(video.ThumbnailPath))
+                        {
+                            try
+                            {
+                                var generatedThumbnail = await _thumbnailService.EnsureThumbnailExistsAsync(videoFile);
+                                if (!string.IsNullOrEmpty(generatedThumbnail))
+                                {
+                                    video.ThumbnailPath = generatedThumbnail;
+                                    _logService.LogInfo($"为视频 '{fileName}' 生成了预览图: {generatedThumbnail}");
+                                }
+                            }
+                            catch (Exception thumbnailEx)
+                            {
+                                _logService.LogWarning($"为视频 '{fileName}' 生成预览图失败: {thumbnailEx.Message}");
                             }
                         }
 

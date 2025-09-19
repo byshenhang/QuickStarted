@@ -30,6 +30,7 @@ namespace QuickStarted
                     services.AddSingleton<ILogService, LogService>();
                     services.AddSingleton<IWindowHookService, WindowHookService>();
                     services.AddSingleton<IScreenService, ScreenService>();
+                    services.AddSingleton<IThumbnailService, ThumbnailService>();
                     services.AddSingleton<IDataService, DataService>();
                     services.AddSingleton<ITrayService, TrayService>();
                     

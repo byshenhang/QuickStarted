@@ -183,6 +183,17 @@
                                     Height="200"
                                     MouseLeftButtonUp="VideoCard_MouseLeftButtonUp"
                                     Tag="{Binding}">
+                                <Border.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header="刷新预览图" 
+                                                  Command="{Binding DataContext.RefreshThumbnailCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                  CommandParameter="{Binding}">
+                                            <MenuItem.Icon>
+                                                <TextBlock Text="🔄" FontSize="12"/>
+                                            </MenuItem.Icon>
+                                        </MenuItem>
+                                    </ContextMenu>
+                                </Border.ContextMenu>
                                 <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="120"/>
