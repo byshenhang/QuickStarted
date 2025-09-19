@@ -8,6 +8,7 @@ using System.Windows.Input;
 using System.Windows.Threading;
 using QuickStarted.Models;
 using QuickStarted.Services;
+using Panel = System.Windows.Controls.Panel;
 
 namespace QuickStarted.Views
 {
@@ -20,7 +21,7 @@ namespace QuickStarted.Views
         private bool _isUserDragging = false;
         private VideoInfo _videoInfo;
         private readonly ILogService? _logService;
-
+        private bool _wasPlayingBeforeDrag = false;
         public VideoPlayerWindow(VideoInfo videoInfo, ILogService? logService = null)
         {
             _logService = logService;
@@ -46,7 +47,7 @@ namespace QuickStarted.Views
             // 初始化定时器用于更新进度
             _timer = new DispatcherTimer
             {
-                Interval = TimeSpan.FromMilliseconds(500)
+                Interval = TimeSpan.FromMilliseconds(150)
             };
             _timer.Tick += Timer_Tick;
             _logService?.LogInfo("定时器初始化完成");
@@ -54,6 +55,17 @@ namespace QuickStarted.Views
             // 设置窗口关闭事件
             Closing += VideoPlayerWindow_Closing;
             _logService?.LogInfo("VideoPlayerWindow构造函数执行完成");
+
+
+            Loaded += (_, __) =>
+            {
+                if (!HasError && VideoPlayer.Source != null && !IsPlaying)
+                {
+                    VideoPlayer.Play();
+                    IsPlaying = true;
+                    _timer.Start();
+                }
+            };
         }
 
         #region 属性
@@ -136,34 +148,19 @@ namespace QuickStarted.Views
 
         private void VideoPlayer_MediaOpened(object sender, RoutedEventArgs e)
         {
-            _logService?.LogInfo("VideoPlayer_MediaOpened事件触发");
-            
             IsLoading = false;
             HasError = false;
-            _logService?.LogInfo("设置IsLoading=false, HasError=false");
-            
+
             if (VideoPlayer.NaturalDuration.HasTimeSpan)
             {
                 TotalSeconds = VideoPlayer.NaturalDuration.TimeSpan.TotalSeconds;
                 OnPropertyChanged(nameof(TotalTimeText));
-                _logService?.LogInfo($"视频总时长: {TotalSeconds}秒");
-            }
-            else
-            {
-                _logService?.LogWarning("无法获取视频总时长");
             }
 
             VideoPlayer.Volume = Volume;
-            _logService?.LogInfo($"设置音量: {Volume}");
-            
-            // 强制刷新显示第一帧
-            VideoPlayer.Position = TimeSpan.FromMilliseconds(1);
-            VideoPlayer.Position = TimeSpan.Zero;
-            
             VideoPlayer.Play();
             IsPlaying = true;
             _timer.Start();
-            _logService?.LogInfo("开始播放视频，定时器已启动");
         }
 
         private void VideoPlayer_MediaEnded(object sender, RoutedEventArgs e)
@@ -239,18 +236,26 @@ namespace QuickStarted.Views
             VideoPlayer.Position = TimeSpan.Zero;
         }
 
+        private void ProgressSlider_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            _isUserDragging = true;
+            _wasPlayingBeforeDrag = IsPlaying;
+            if (!_hasError && IsPlaying)
+            {
+                VideoPlayer.Pause();
+                IsPlaying = false;
+                _timer.Stop();
+            }
+        }
+
         private void ProgressSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             if (_isUserDragging && !HasError)
             {
                 VideoPlayer.Position = TimeSpan.FromSeconds(e.NewValue);
-                OnPropertyChanged(nameof(CurrentTimeText));
+                OnPropertyChanged(nameof(CurrentTimeText)); // 立刻刷新时间文本
+                                                            // ScrubbingEnabled=True 会让画面也立刻更新
             }
-        }
-
-        private void ProgressSlider_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            _isUserDragging = true;
         }
 
         private void ProgressSlider_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -259,8 +264,15 @@ namespace QuickStarted.Views
             if (!HasError)
             {
                 VideoPlayer.Position = TimeSpan.FromSeconds(ProgressSlider.Value);
+                if (_wasPlayingBeforeDrag)
+                {
+                    VideoPlayer.Play();
+                    IsPlaying = true;
+                    _timer.Start();
+                }
             }
         }
+
 
         private void VolumeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
@@ -301,6 +313,9 @@ namespace QuickStarted.Views
             
             VideoPlayer?.Close();
             _logService?.LogInfo("视频播放器已关闭，VideoPlayerWindow关闭完成");
+
+
+            if (VideoPlayer.Parent is Panel p) p.Children.Remove(VideoPlayer);
         }
 
         // 标题栏拖拽事件

@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
     Title="{Binding VideoTitle}"
     Width="900"
     Height="600"
@@ -12,10 +13,14 @@
     Background="Transparent"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
-    AllowsTransparency="True"
+    AllowsTransparency="False"
     ResizeMode="CanResizeWithGrip"
     mc:Ignorable="d">
-
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome CaptionHeight="35"
+                            ResizeBorderThickness="6"
+                            UseAeroCaptionButtons="False"/>
+    </shell:WindowChrome.WindowChrome>
     <Window.Resources>
         <!-- 转换器 -->
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
@@ -104,6 +109,7 @@
                         BorderThickness="0"
                         Foreground="White"
                         ToolTip="全屏"
+                        shell:WindowChrome.IsHitTestVisibleInChrome="True"
                         Click="MaximizeButton_Click">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -141,6 +147,7 @@
                         BorderThickness="0"
                         Foreground="White"
                         ToolTip="关闭"
+                        shell:WindowChrome.IsHitTestVisibleInChrome="True"
                         Click="CloseButton_Click">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -184,6 +191,7 @@
                     MediaEnded="VideoPlayer_MediaEnded"
                     MediaFailed="VideoPlayer_MediaFailed"
                     MediaOpened="VideoPlayer_MediaOpened"
+                    ScrubbingEnabled="True" 
                     Source="{Binding VideoSource}"
                     Stretch="Uniform"
                     UnloadedBehavior="Manual" />

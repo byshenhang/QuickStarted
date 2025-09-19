@@ -252,11 +252,7 @@
                                                            Foreground="#AAAAAA"/>
                                             </StackPanel>
                                             
-                                            <TextBlock Grid.Column="1"
-                                                       Text="{Binding FormattedDuration}"
-                                                       FontSize="11"
-                                                       Foreground="#CCCCCC"
-                                                       VerticalAlignment="Bottom"/>
+                                           
                                         </Grid>
                                     </StackPanel>
                                 </Grid>

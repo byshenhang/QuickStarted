@@ -65,23 +65,5 @@ namespace QuickStarted.Models
             }
         }
 
-        /// <summary>
-        /// 格式化的时长字符串
-        /// </summary>
-        public string FormattedDuration
-        {
-            get
-            {
-                if (Duration.HasValue)
-                {
-                    var duration = Duration.Value;
-                    if (duration.TotalHours >= 1)
-                        return duration.ToString(@"h\:mm\:ss");
-                    else
-                        return duration.ToString(@"m\:ss");
-                }
-                return "未知";
-            }
-        }
     }
 }
