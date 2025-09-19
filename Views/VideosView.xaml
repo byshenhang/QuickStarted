@@ -140,32 +140,6 @@
             </Grid>
 
             <!-- 状态栏 -->
-            <Border Grid.Row="1" 
-                    Background="#22FFFFFF" 
-                    Margin="20,0,20,10" 
-                    Padding="15,8" 
-                    CornerRadius="5">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    
-                    <TextBlock Grid.Column="0"
-                               Text="{Binding StatusMessage}"
-                               Foreground="#CCCCCC"
-                               FontSize="14"
-                               VerticalAlignment="Center"/>
-                    
-                    <!-- 加载指示器 -->
-                    <StackPanel Grid.Column="1" 
-                                Orientation="Horizontal" 
-                                Visibility="{Binding IsLoading, Converter={StaticResource BooleanToVisibilityConverter}}">
-                        <TextBlock Text="⏳" FontSize="14" Margin="0,0,5,0"/>
-                        <TextBlock Text="加载中..." Foreground="#CCCCCC" FontSize="12"/>
-                    </StackPanel>
-                </Grid>
-            </Border>
 
             <!-- 视频列表 -->
             <ScrollViewer Grid.Row="2" 
